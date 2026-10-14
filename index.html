@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-<meta name="theme-color" content="#f4f4f9" />
-<title>מסה נקייה | תכנון ומעקב ארוחות</title>
+<meta name="theme-color" content="#f4f5fa" />
+<title>מסה נקייה | תכנון ומעקב ארוחות — גרסה 10</title>
+<meta name="app-version" content="10" />
 <style>
 :root{--bg:#0e0f11;--panel:#17191d;--panel2:#202329;--border:#2e323a;--text:#f3f4f6;--muted:#a2a7b1;--green:#b8f36c;--orange:#ffbf69;--blue:#81b8ff;--pink:#ff8fa3;--red:#ff7777;--radius:18px;--shadow:0 12px 35px #0005}
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top right,#1b2022 0,#0e0f11 48%);color:var(--text);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:15px;line-height:1.45}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--green);outline-offset:2px}.app{max-width:1040px;margin:auto;padding:20px 16px 60px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:8px 0 24px}.brand{display:flex;align-items:center;gap:12px}.logo{width:45px;height:45px;background:var(--green);color:#171a13;border-radius:14px;display:grid;place-items:center;font-weight:900;font-size:23px}.eyebrow{font-size:12px;color:var(--muted);letter-spacing:.04em}.brand h1{font-size:22px;line-height:1.1;margin:2px 0 0;letter-spacing:-.03em}.top-actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--border);background:var(--panel2);color:var(--text);border-radius:12px;padding:10px 13px;display:inline-flex;align-items:center;justify-content:center;gap:7px}.btn:hover{border-color:#646b76}.btn.primary{background:var(--green);color:#13170e;border-color:var(--green);font-weight:800}.btn.ghost{background:transparent}.btn.danger{color:#ffaaaa}.date-line{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;color:var(--muted);font-size:13px}.date-line strong{color:var(--text);font-weight:600}.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:14px;margin-bottom:14px}.card{background:linear-gradient(145deg,#1b1d21,#15171a);border:1px solid var(--border);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);min-width:0}.card-title{font-size:14px;color:var(--muted);margin:0 0 12px}.calories-row{display:flex;align-items:center;gap:20px}.ring{--pct:0deg;width:132px;height:132px;border-radius:50%;background:conic-gradient(var(--green) var(--pct),#32363d 0);display:grid;place-items:center;flex:0 0 auto;position:relative}.ring:before{content:"";position:absolute;inset:9px;border-radius:50%;background:#191b1f}.ring-center{position:relative;text-align:center}.ring-num{font-size:25px;font-weight:800;letter-spacing:-.05em}.ring-label{font-size:11px;color:var(--muted)}.ring-copy{min-width:0}.ring-copy h2{font-size:21px;margin:0 0 6px;letter-spacing:-.03em}.ring-copy p{color:var(--muted);font-size:13px;margin:0}.little-note{font-size:11px;color:var(--muted);margin-top:13px}.macro-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.macro{background:#101215;border:1px solid #2b2e34;padding:13px 12px;border-radius:14px;min-width:0}.macro-head{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:12px}.dot{width:7px;height:7px;display:inline-block;border-radius:50%}.macro-val{font-size:21px;font-weight:800;margin:7px 0 2px;white-space:nowrap}.macro-sub{font-size:11px;color:var(--muted)}.bar{height:5px;border-radius:20px;background:#30343b;overflow:hidden;margin-top:10px}.bar span{display:block;height:100%;width:0;border-radius:20px;transition:width .18s}.protein .dot,.protein .bar span{background:var(--green)}.carbs .dot,.carbs .bar span{background:var(--orange)}.fat .dot,.fat .bar span{background:var(--blue)}.tabs{display:flex;gap:7px;overflow:auto;margin:20px 0 14px;padding:3px 0}.tab{flex:0 0 auto;background:transparent;border:1px solid var(--border);color:var(--muted);padding:10px 16px;border-radius:12px}.tab.active{background:#d8ff9d;color:#11160d;border-color:#d8ff9d;font-weight:800}.page{display:none}.page.active{display:block}.section-head{display:flex;justify-content:space-between;align-items:end;gap:10px;margin:22px 0 12px}.section-head h2{margin:0;font-size:19px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:12px}.meals{display:grid;gap:12px}.meal{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}.meal-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 17px;border-bottom:1px solid transparent}.meal.has-items .meal-head{border-color:var(--border)}.meal-info{display:flex;align-items:center;gap:11px;min-width:0}.meal-icon{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;font-size:20px;background:#272c26}.meal h3{font-size:15px;margin:0}.meal-meta{font-size:12px;color:var(--muted);margin-top:3px}.meal-sum{text-align:left;white-space:nowrap}.meal-sum strong{display:block;font-size:15px}.meal-sum span{font-size:11px;color:var(--muted)}.meal-body{padding:0 14px 14px}.empty{color:var(--muted);font-size:13px;text-align:center;padding:18px 8px;border:1px dashed #373b44;border-radius:12px;margin-bottom:10px}.food-line{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;align-items:center;padding:13px 3px;border-bottom:1px solid #2b2e34}.food-line:last-of-type{border-bottom:0}.food-line h4{font-size:14px;margin:0 0 4px}.food-detail{font-size:12px;color:var(--muted)}.food-macros{font-size:11px;color:#d4d7dc;margin-top:5px}.qty-edit{display:flex;align-items:center;gap:6px;justify-content:flex-end}.qty-edit input{width:74px;background:#0d0f11;border:1px solid var(--border);color:var(--text);border-radius:9px;padding:8px;text-align:center}.qty-edit small{color:var(--muted);font-size:11px}.tiny-btn{width:30px;height:30px;display:grid;place-items:center;border-radius:9px;border:1px solid var(--border);background:#23262b;color:var(--text)}.remove-btn{border:0;background:transparent;color:#a5a9b1;padding:3px 6px;font-size:17px}.add-btn{width:100%;margin-top:10px;padding:11px;border:1px dashed #4c5544;border-radius:12px;background:#20251d;color:var(--green);font-weight:700}.food-toolbar{display:grid;grid-template-columns:1fr auto;gap:10px;margin:12px 0}.search{width:100%;background:#101215;color:var(--text);border:1px solid var(--border);padding:12px 14px;border-radius:12px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0 16px}.chip{background:#1b1d21;border:1px solid var(--border);border-radius:99px;color:var(--muted);padding:8px 12px;font-size:12px}.chip.active{border-color:var(--green);color:var(--green);background:#1f2918}.food-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.food-card{background:var(--panel);border:1px solid var(--border);border-radius:15px;padding:14px;display:flex;flex-direction:column;gap:9px;min-width:0}.food-top{display:flex;align-items:start;justify-content:space-between;gap:8px}.food-name{font-weight:750}.cat-badge{font-size:10px;border-radius:7px;padding:4px 7px;background:#292d33;color:#c7cbd3;white-space:nowrap}.food-info{color:var(--muted);font-size:12px}.food-kcal{font-weight:750}.food-card .btn{margin-top:auto;width:100%;padding:8px}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:14px}.stat label{display:block;color:var(--muted);font-size:12px}.stat strong{display:block;font-size:20px;margin-top:5px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px}.field label{font-size:12px;color:var(--muted)}.field input,.field select{width:100%;background:#0e1012;color:var(--text);border:1px solid var(--border);border-radius:10px;padding:11px}.form-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.table-wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:540px}th,td{border-bottom:1px solid var(--border);padding:12px 10px;text-align:right;font-size:13px}th{color:var(--muted);font-weight:600}.notice{border:1px solid #56503b;background:#262318;border-radius:13px;padding:13px 14px;color:#e9d9ae;font-size:12px;line-height:1.6;margin-top:16px}.hint{font-size:12px;color:var(--muted);line-height:1.6}.footer{color:#737984;font-size:11px;text-align:center;margin-top:27px}.overlay{position:fixed;inset:0;background:#000a;display:none;align-items:flex-end;justify-content:center;padding:15px;z-index:20}.overlay.open{display:flex}.modal{width:min(100%,620px);max-height:90dvh;overflow:auto;background:#191b1f;border:1px solid #3b3f47;border-radius:22px;box-shadow:0 22px 75px #000b;padding:20px}.modal-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}.modal-head h2{font-size:19px;margin:0}.close{background:#2a2d33;color:white;border:0;border-radius:10px;width:35px;height:35px;font-size:20px}.selected-food{border:1px solid #3a4433;background:#20271b;border-radius:13px;padding:12px;margin-bottom:15px}.quantity-choices{display:flex;gap:7px;margin:10px 0}.quantity-choices button{flex:1}.target-strip{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 0}.mini-input{width:86px;background:#0e1012;color:white;border:1px solid var(--border);padding:8px;border-radius:9px}.hidden{display:none!important}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#e0ffaf;color:#17200f;border-radius:12px;padding:11px 16px;font-weight:700;font-size:13px;box-shadow:var(--shadow);display:none;z-index:40;max-width:90vw}.toast.show{display:block}.measure-empty{color:var(--muted);padding:14px 0;font-size:13px}
@@ -218,6 +219,160 @@ button:active,.btn:active,.tab:active,.chip:active,.tiny-btn:active,.swap-option
 }
 @media(prefers-reduced-motion:reduce){.btn,.tab,.chip,.tiny-btn,.close,.swap-option,.qty-step,.eaten-toggle{transition:none!important}}
 </style>
+
+<style>
+/* V7 — תפריט החלפה קומפקטי ומעודן, בהשראת דוגמת הממשק של המשתמש */
+:root{--bg:#f4f5fa;--panel:#fff;--panel2:#f9f9fc;--border:#e8e8ef;--text:#25242c;--muted:#898995;--coral:#ff5752;--amber:#d7851a;--macro-blue:#7899e7;--macro-pink:#d875a2;--ease-v7:cubic-bezier(.2,.82,.22,1)}
+body{background:radial-gradient(ellipse at 88% 0%,rgba(230,219,247,.62) 0,transparent 31%),radial-gradient(ellipse at 8% 5%,rgba(255,226,224,.68) 0,transparent 30%),var(--bg)}
+.btn,.tab,.chip,.tiny-btn,.close,.swap-option,.qty-step,.eaten-toggle{transition:transform .22s var(--ease-v7),background-color .25s var(--ease-v7),border-color .25s var(--ease-v7),box-shadow .25s var(--ease-v7),color .25s var(--ease-v7)}
+.btn,.tab,.chip,.close,.swap-option{border-radius:999px}
+.btn:active,.tab:active,.chip:active,.tiny-btn:active,.close:active,.swap-option:active,.qty-step:active{transform:scale(.965)}
+.eaten-toggle{border-radius:50%;transition:background-color .24s var(--ease-v7),border-color .24s var(--ease-v7),color .24s var(--ease-v7),transform .24s var(--ease-v7),box-shadow .24s var(--ease-v7)}
+.eaten-toggle[aria-pressed="true"]{background:#ff5b55;border-color:#ff5b55;box-shadow:0 4px 11px rgba(255,87,82,.20)}
+.swap-overlay{padding:0!important;background:rgba(42,36,60,.30)!important;backdrop-filter:blur(3px)}
+.swap-modal{width:min(100%,620px);height:min(91dvh,820px);max-height:91dvh;overflow:hidden;display:flex;flex-direction:column;background:#f4f5fa!important;border:1px solid rgba(231,230,239,.9)!important;border-radius:26px 26px 0 0!important;padding:12px 17px calc(15px + env(safe-area-inset-bottom))!important;box-shadow:0 -12px 50px rgba(42,36,60,.12)!important}
+.swap-modal .sheet-grabber{width:40px;height:4px;background:#dfe0e8;margin:0 auto 12px}
+.swap-modal .modal-head{flex:0 0 auto;margin-bottom:13px;align-items:center}
+.swap-modal .modal-head h2{font-size:18px;font-weight:850;color:#24242d;line-height:1.3}
+.swap-subtitle{font-size:12px;color:#8b8c97;margin-top:4px}
+.swap-modal .close{width:32px;height:32px;background:#fff;color:#696977;border:1px solid #e9e8f0;box-shadow:0 1px 4px rgba(42,36,60,.04)}
+#swapCurrent,#swapHint{display:none!important}
+#swapSearch{flex:0 0 auto;border-radius:999px!important;background:#fff!important;border:1px solid #e8e7ef!important;padding:10px 15px!important;min-height:42px;box-shadow:0 2px 6px rgba(40,35,60,.025)!important;font-size:14px}
+.swap-list{display:grid;gap:0;margin-top:8px;overflow:auto;min-height:0;flex:1 1 auto;overscroll-behavior:contain;padding-bottom:7px}
+.swap-option{display:grid;grid-template-columns:10px minmax(0,1fr) auto;align-items:center;gap:9px;text-align:right;width:100%;border:0;border-bottom:1px solid #e9e9f0;background:transparent!important;border-radius:0!important;padding:11px 4px!important;min-height:65px;box-shadow:none!important;color:#24242d}
+.swap-option:last-child{border-bottom:0}
+.swap-option:hover{background:rgba(255,255,255,.65)!important;border-color:#e9e9f0}
+.swap-option:active{background:#fff0ef!important;transform:scale(.99)}
+.swap-dot{width:7px;height:7px;border-radius:50%;background:var(--amber);display:block;align-self:center}
+.swap-info{display:block;min-width:0}
+.swap-option strong{display:block;font-size:14px;font-weight:820;line-height:1.35;color:#25242d;overflow-wrap:anywhere}
+.swap-amount-main{display:block;font-size:13px!important;line-height:1.35;color:#c77913!important;font-weight:850!important;margin-top:3px!important;margin-bottom:0!important}
+.swap-grams{display:block;font-size:11px;color:#91919b;margin-top:2px;line-height:1.3}
+.swap-value{white-space:nowrap;text-align:left;justify-self:start;color:#ca7a11;font-size:12px;font-weight:850;line-height:1.2;padding-right:2px}
+.swap-value small{display:none!important}
+.swap-option[disabled]{opacity:.44;cursor:not-allowed;background:transparent!important}
+.swap-option[disabled] .swap-value{font-size:10px;white-space:normal;max-width:76px}
+.swap-modal .empty{background:#fff;border:1px solid #ebeaf1;border-radius:15px;color:#8b8b96}
+@media(max-width:650px){
+ .swap-modal{height:92dvh;max-height:92dvh;padding:10px 14px calc(14px + env(safe-area-inset-bottom))!important}
+ .swap-modal .modal-head h2{font-size:17px}
+ .swap-option{grid-template-columns:9px minmax(0,1fr) auto;gap:8px;min-height:61px;padding:10px 3px!important}
+ .swap-option strong{font-size:14px}
+ .swap-amount-main{font-size:13px!important}
+ .swap-grams{font-size:11px}
+ .swap-value{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.btn,.tab,.chip,.close,.swap-option,.qty-step,.eaten-toggle{transition:none!important}}
+</style>
+
+
+<style>
+/* V8 — החלפה קרובה יותר לעיצוב הייחוס: רשימה מרווחת, פינות רכות, טיפוגרפיה גדולה ומעברים עדינים */
+:root{--ease-v8:cubic-bezier(.22,.78,.22,1)}
+html{scroll-behavior:smooth}
+body,button,input,select{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Segoe UI",system-ui,sans-serif;letter-spacing:-.012em}
+button,.btn,.tab,.chip,.tiny-btn,.close,.swap-option,.qty-step,.eaten-toggle{transition:transform .30s var(--ease-v8),background-color .32s var(--ease-v8),border-color .32s var(--ease-v8),box-shadow .32s var(--ease-v8),color .32s var(--ease-v8),opacity .25s var(--ease-v8);-webkit-tap-highlight-color:transparent}
+.btn,.tab,.chip,.tiny-btn,.close,.swap-option,.qty-step{border-radius:999px}
+button:active,.btn:active,.tab:active,.chip:active,.tiny-btn:active,.close:active,.swap-option:active,.qty-step:active{transform:scale(.975)}
+.page.active{animation:pageSoftEnter .32s var(--ease-v8) both}
+@keyframes pageSoftEnter{from{opacity:.72;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+.meal-progress,.food-line,.macro,.card,.stat,.food-card{animation:contentSoftEnter .26s var(--ease-v8) both}
+@keyframes contentSoftEnter{from{opacity:.88;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+.meal-target-bar span,.bar span{transition:width .42s var(--ease-v8)}
+.eaten-toggle{width:30px;height:30px;min-width:30px;border:1.5px solid #d9d9e5;background:#fff;border-radius:50%;box-shadow:0 2px 6px rgba(40,34,62,.06)}
+.eaten-toggle[aria-pressed="true"]{background:#ff5d57;border-color:#ff5d57;box-shadow:0 4px 12px rgba(255,93,87,.23);transform:scale(1.02)}
+.eaten-toggle:active{transform:scale(.91)}
+.swap-overlay{padding:0!important;background:rgba(43,38,60,.28)!important;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.swap-modal{width:min(100%,620px);height:min(92dvh,840px);max-height:92dvh;overflow:hidden;display:flex;flex-direction:column;background:#f4f5fa!important;border:1px solid rgba(231,230,239,.92)!important;border-radius:28px 28px 0 0!important;padding:11px 16px calc(15px + env(safe-area-inset-bottom))!important;box-shadow:0 -14px 50px rgba(42,36,60,.15)!important}
+.swap-modal .sheet-grabber{width:42px;height:5px;background:#dedee7;margin:0 auto 13px;border-radius:99px}
+.swap-modal .modal-head{flex:0 0 auto;margin-bottom:13px;align-items:center}
+.swap-modal .modal-head h2{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",system-ui,sans-serif;font-size:19px!important;font-weight:780;letter-spacing:-.035em;line-height:1.3;color:#25242d}
+.swap-subtitle{font-size:13px!important;color:#858592!important;margin-top:3px;line-height:1.4}
+.swap-modal .close{width:35px;height:35px;background:#fff;color:#5d5c68;border:1px solid #e7e6ef;box-shadow:0 2px 8px rgba(42,36,60,.05);font-size:23px}
+#swapSearch{flex:0 0 auto;border-radius:999px!important;background:#fff!important;border:1px solid #e6e5ef!important;padding:12px 16px!important;min-height:47px;box-shadow:0 2px 8px rgba(40,35,60,.035)!important;font-size:16px!important;letter-spacing:-.02em}
+#swapSearch::placeholder{color:#9a9aa5;opacity:1}
+.swap-list{display:flex!important;flex-direction:column;gap:8px!important;margin-top:12px!important;overflow:auto;min-height:0;flex:1 1 auto;overscroll-behavior:contain;padding:1px 1px 8px!important}
+.swap-modal .swap-option{display:grid;grid-template-columns:8px minmax(0,1fr) auto;align-items:center;gap:11px;text-align:right;width:100%;border:1px solid #e9e8f0!important;border-radius:18px!important;padding:13px 13px!important;min-height:78px;background:rgba(255,255,255,.91)!important;box-shadow:0 3px 10px rgba(41,35,63,.035)!important;color:#24242d;opacity:0;animation:swapRowIn .34s var(--ease-v8) forwards}
+.swap-modal .swap-option:nth-child(1){animation-delay:.015s}.swap-modal .swap-option:nth-child(2){animation-delay:.03s}.swap-modal .swap-option:nth-child(3){animation-delay:.045s}.swap-modal .swap-option:nth-child(4){animation-delay:.06s}.swap-modal .swap-option:nth-child(5){animation-delay:.075s}.swap-modal .swap-option:nth-child(n+6){animation-delay:.09s}
+@keyframes swapRowIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.swap-modal .swap-option:last-child{border-bottom:1px solid #e9e8f0!important}
+.swap-modal .swap-option:hover{border-color:#f2c4c1!important;background:#fffaf9!important}
+.swap-modal .swap-option:active{background:#fff0ef!important;transform:scale(.985)}
+.swap-modal .swap-option strong{display:block;font-size:16px!important;font-weight:760;line-height:1.35;color:#25242d;letter-spacing:-.025em;overflow-wrap:anywhere}
+.swap-modal .swap-amount-main{display:block;font-size:15px!important;line-height:1.35;color:#d18419!important;font-weight:800!important;margin-top:5px!important;margin-bottom:0!important;letter-spacing:-.018em}
+.swap-modal .swap-grams{display:block;font-size:13px!important;color:#888995;margin-top:3px;line-height:1.35;letter-spacing:-.01em}
+.swap-modal .swap-value{white-space:nowrap;text-align:left;justify-self:start;color:#d18419;font-size:14px;font-weight:800;line-height:1.2;padding-right:2px;min-width:42px}
+.swap-modal .swap-value small{display:none!important}
+.swap-modal .swap-dot{width:8px;height:8px;border-radius:50%;background:#d7851a}
+.swap-modal .swap-option[disabled]{opacity:.45;cursor:not-allowed;animation:none}
+.swap-modal .empty{background:#fff;border:1px solid #ebeaf1;border-radius:18px;color:#858592;font-size:15px;padding:22px 14px}
+@media(max-width:650px){
+ .swap-modal{height:92dvh;max-height:92dvh;padding:10px 14px calc(14px + env(safe-area-inset-bottom))!important;border-radius:26px 26px 0 0!important}
+ .swap-modal .modal-head h2{font-size:19px!important}
+ .swap-modal .swap-option{grid-template-columns:8px minmax(0,1fr) auto;gap:10px;min-height:79px;padding:13px 12px!important;border-radius:18px!important}
+ .swap-modal .swap-option strong{font-size:16px!important}
+ .swap-modal .swap-amount-main{font-size:15px!important}
+ .swap-modal .swap-grams{font-size:13px!important}
+ .swap-modal .swap-value{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.page.active,.meal-progress,.food-line,.macro,.card,.stat,.food-card,.swap-modal .swap-option{animation:none!important;opacity:1!important}button,.btn,.tab,.chip,.tiny-btn,.close,.swap-option,.qty-step,.eaten-toggle,.meal-target-bar span,.bar span{transition:none!important}}
+</style>
+
+
+<style>
+/* גרסה 9 — אייקוני קו אלגנטיים, כמויות ידידותיות וסיכומי תזונה עקביים */
+.meal-icon{display:grid!important;place-items:center;width:43px;height:43px;flex:0 0 43px;border-radius:15px!important;background:linear-gradient(145deg,#fff8f7,#f5eaf1)!important;color:#c96d78!important;box-shadow:inset 0 0 0 1px rgba(214,133,145,.13),0 3px 8px rgba(126,82,105,.05)!important}
+.meal-icon svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.meal:nth-child(2) .meal-icon{color:#be8b4c!important;background:linear-gradient(145deg,#fff9f0,#f8f0e4)!important}
+.meal:nth-child(3) .meal-icon{color:#8297c9!important;background:linear-gradient(145deg,#f7f9ff,#edf0fb)!important}
+.meal:nth-child(4) .meal-icon{color:#8d7bb7!important;background:linear-gradient(145deg,#faf7ff,#f1ecfa)!important}
+.food-macros-actual{margin-top:4px;color:#7d8190;font-size:12px;font-weight:600}
+.food-plan-qty strong,.qty-count{font-variant-numeric:tabular-nums}
+.qty-counter{border-radius:999px!important;padding:4px!important;box-shadow:inset 0 0 0 1px #e7e5ed;background:#f8f8fb!important}
+.qty-step{border-radius:50%!important;width:34px!important;height:34px!important;min-width:34px!important;display:grid;place-items:center;background:#fde8e8!important;color:#d65f64!important;border:0!important;font-size:20px!important;font-weight:600;transition:transform .24s cubic-bezier(.2,.8,.2,1),background .24s ease,box-shadow .24s ease!important}
+.qty-step:active{transform:scale(.9)!important;background:#f8d5d8!important}
+.eaten-toggle{border-radius:50%!important;width:25px!important;height:25px!important;min-width:25px!important;display:grid;place-items:center;transition:background .25s ease,transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s ease!important}
+.eaten-toggle[aria-pressed="true"]{box-shadow:0 2px 8px rgba(255,98,91,.2)!important;transform:scale(1.02)}
+.meal-head-toggle .meal-chevron{transition:transform .3s cubic-bezier(.2,.8,.2,1)!important}
+.meal.expanded .meal-chevron{transform:rotate(180deg)}
+.meal-body{animation:mealReveal .26s cubic-bezier(.2,.8,.2,1)}
+@keyframes mealReveal{from{opacity:.35;transform:translateY(-4px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:650px){.meal-icon{width:40px;height:40px;flex-basis:40px;border-radius:14px!important}.meal-icon svg{width:22px;height:22px}.food-macros-actual{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.meal-body{animation:none!important}}
+</style>
+
+
+<style>
+/* V10: compact water ring and simple, accessible daily hydration controls */
+.water-card{display:grid;grid-template-columns:94px minmax(0,1fr);align-items:center;gap:15px;position:relative;margin:0 0 16px;padding:15px 16px 32px;border-radius:23px;border:1px solid #e6e8f1;background:rgba(255,255,255,.9);box-shadow:0 5px 18px rgba(48,43,75,.045);}
+.water-ring{--water-pct:0deg;width:92px;height:92px;border-radius:50%;display:grid;place-items:center;position:relative;flex:0 0 auto;background:conic-gradient(#4c9ee8 var(--water-pct),#e3edf8 0);box-shadow:0 3px 12px rgba(66,144,215,.1);transition:background .45s cubic-bezier(.2,.82,.22,1),transform .3s cubic-bezier(.2,.82,.22,1);}
+.water-ring::before{content:"";position:absolute;inset:7px;border-radius:50%;background:#fbfcff;box-shadow:inset 0 1px 5px rgba(62,117,166,.04);}
+.water-ring-center{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;}
+.water-ring-center strong{font-size:23px;font-weight:820;letter-spacing:-.04em;color:#2679c4;font-variant-numeric:tabular-nums;}
+.water-ring-center span{font-size:11px;color:#7a95ad;margin-top:5px;font-weight:650;}
+.water-main{min-width:0;}
+.water-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:7px;}
+.water-head h2{font-size:16px;line-height:1.25;margin:0;color:#292937;font-weight:800;letter-spacing:-.025em;}
+.water-head p{margin:4px 0 0;color:#858896;font-size:12px;}
+.water-goal-wrap{display:flex;align-items:center;gap:5px;color:#8a8c99;font-size:11px;white-space:nowrap;}
+.water-goal-wrap select{width:auto;min-width:70px;border:1px solid #e4e9f2;border-radius:999px;background:#f7faff;color:#4383ba;padding:5px 8px;font:inherit;font-weight:750;outline:none;}
+.water-total-row{display:flex;align-items:baseline;justify-content:space-between;gap:9px;margin-bottom:10px;}
+.water-total-row strong{color:#347fbb;font-size:15px;font-weight:850;font-variant-numeric:tabular-nums;}
+.water-total-row span{font-size:11px;color:#858896;text-align:left;}
+.water-quick-actions{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px;}
+.water-quick-btn{border:1px solid #d9eafb;background:#eef7ff;color:#2e7bbd;border-radius:999px;padding:7px 12px;min-height:34px;font-weight:750;font-size:12px;box-shadow:0 2px 6px rgba(58,131,191,.045);transition:transform .22s,background .25s,border-color .25s,box-shadow .25s;}
+.water-quick-btn.soft{background:#fff;border-color:#e7ebf2;color:#7f8c9a;}
+.water-quick-btn:active,.water-custom-add:active{transform:scale(.96);}
+.water-custom-row{display:flex;align-items:center;gap:7px;flex-wrap:wrap;}
+.water-custom-row label{font-size:11px;color:#8b8e9b;}
+.water-custom-row input{width:62px;min-width:0;border:1px solid #e2e7f0;border-radius:999px;background:#fff;color:#303342;padding:7px 9px;text-align:center;font:inherit;font-size:12px;}
+.water-custom-row select{border:1px solid #e2e7f0;border-radius:999px;background:#fff;color:#606a7b;padding:7px 8px;font:inherit;font-size:12px;max-width:100px;}
+.water-custom-add{border:0;border-radius:999px;background:#4b9be0;color:#fff;padding:8px 13px;font:inherit;font-size:12px;font-weight:800;box-shadow:0 4px 10px rgba(69,147,211,.18);transition:transform .22s,background .22s,box-shadow .22s;}
+.water-note{position:absolute;right:16px;bottom:8px;color:#a1a3af;font-size:10px;line-height:1.3;}
+@media(max-width:650px){.water-card{grid-template-columns:78px minmax(0,1fr);gap:11px;padding:13px 12px 30px;border-radius:21px;margin-bottom:13px}.water-ring{width:76px;height:76px}.water-ring::before{inset:6px}.water-ring-center strong{font-size:20px}.water-ring-center span{font-size:10px;margin-top:4px}.water-head{align-items:flex-start;gap:5px}.water-head h2{font-size:15px}.water-head p{font-size:11px}.water-goal-wrap{font-size:10px;gap:4px}.water-goal-wrap select{min-width:64px;padding:5px 7px}.water-total-row{gap:5px;margin-bottom:8px;align-items:flex-start;flex-direction:column}.water-total-row strong{font-size:14px}.water-total-row span{font-size:10px}.water-quick-actions{gap:5px}.water-quick-btn{min-height:32px;padding:6px 10px;font-size:11px}.water-custom-row{gap:5px}.water-custom-row label{display:none}.water-custom-row input{width:49px;padding:7px 5px}.water-custom-row select{max-width:75px;padding:7px 5px;font-size:11px}.water-custom-add{padding:8px 10px;font-size:11px}.water-note{right:12px;bottom:7px;font-size:9px}}
+@media(prefers-reduced-motion:reduce){.water-ring,.water-quick-btn,.water-custom-add{transition:none!important}}
+</style>
+
 </head>
 <body>
 <div class="app">
@@ -242,6 +397,33 @@ button:active,.btn:active,.tab:active,.chip:active,.tiny-btn:active,.swap-option
         <div class="macro fat"><div class="macro-head"><i class="dot"></i>שומן</div><div class="macro-val"><span id="fNow">0</span><small style="font-size:11px;color:var(--muted)"> ג׳</small></div><div class="macro-sub">מתוך <span id="fGoal">70</span> ג׳</div><div class="bar"><span id="fBar"></span></div></div>
       </div>
     </div>
+  </section>
+  <section class="water-card" aria-label="מעקב שתייה יומי">
+    <div class="water-ring" id="waterRing" style="--water-pct:0deg" role="img" aria-label="התקדמות שתייה יומית">
+      <div class="water-ring-center"><strong id="waterLiters">0</strong><span>ליטר</span></div>
+    </div>
+    <div class="water-main">
+      <div class="water-head">
+        <div><h2>המים שלי</h2><p id="waterSummary">0 מתוך 2 ליטר</p></div>
+        <label class="water-goal-wrap">יעד
+          <select id="waterGoalSelect" aria-label="יעד מעקב מים">
+            <option value="1500">1.5 ל׳</option><option value="2000" selected>2 ל׳</option><option value="2500">2.5 ל׳</option><option value="3000">3 ל׳</option><option value="3500">3.5 ל׳</option>
+          </select>
+        </label>
+      </div>
+      <div class="water-total-row"><strong id="waterAmountSummary">0 מ״ל</strong><span id="waterRemaining">נותרו 2 ליטר ליעד</span></div>
+      <div class="water-quick-actions">
+        <button type="button" class="water-quick-btn" data-water-add="250">＋ כוס</button>
+        <button type="button" class="water-quick-btn" data-water-add="500">＋ חצי ליטר</button>
+        <button type="button" class="water-quick-btn soft" data-water-add="-250">− כוס</button>
+      </div>
+      <div class="water-custom-row">
+        <label for="waterQty">כמות</label><input id="waterQty" type="number" min="0.1" step="0.1" value="1" inputmode="decimal" aria-label="כמות שתייה להוספה"/>
+        <select id="waterUnit" aria-label="יחידת שתייה"><option value="cups">כוסות</option><option value="liters">ליטרים</option><option value="ml">מ״ל</option></select>
+        <button type="button" id="waterCustomAdd" class="water-custom-add">הוסף</button>
+      </div>
+    </div>
+    <div class="water-note">כוס אחת = 250 מ״ל · היעד הוא כלי מעקב שניתן לשינוי, לא כלל רפואי.</div>
   </section>
   <nav class="tabs" aria-label="ניווט ראשי"><button class="tab active" data-page="day">היום שלי</button><button class="tab" data-page="foods">מאגר המזון</button><button class="tab" data-page="measurements">מדידות והתקדמות</button></nav>
   <main>
@@ -300,9 +482,9 @@ button:active,.btn:active,.tab:active,.chip:active,.tiny-btn:active,.swap-option
  </div>
 </div>
 
-<div class="overlay swap-overlay" id="swapModal" role="dialog" aria-modal="true" aria-labelledby="swapTitle"><div class="modal swap-modal"><div class="sheet-grabber" aria-hidden="true"></div><div class="modal-head"><div><h2 id="swapTitle">החלפת מזון</h2><div class="swap-subtitle" id="swapSubtitle">בחר חלופה מאותה קבוצת מזון</div></div><button class="close" data-close="swapModal" aria-label="סגירה">×</button></div><div id="swapCurrent" class="selected-food"></div><p class="hint" id="swapHint">בחר מזון מאותה קבוצת מזון. הכמות המוצעת תותאם לפי המאקרו המרכזי בקבוצה, ותוכל לערוך אותה לאחר ההחלפה.</p><input id="swapSearch" class="search" placeholder="חיפוש חלופה…"/><div class="swap-list" id="swapOptions"></div><div class="form-actions"><button class="btn" data-close="swapModal">ביטול</button></div></div></div>
+<div class="overlay swap-overlay" id="swapModal" role="dialog" aria-modal="true" aria-labelledby="swapTitle"><div class="modal swap-modal"><div class="sheet-grabber" aria-hidden="true"></div><div class="modal-head"><div><h2 id="swapTitle">החלפת מזון</h2><div class="swap-subtitle" id="swapSubtitle">בחר מזון חלופי</div></div><button class="close" data-close="swapModal" aria-label="סגירה">×</button></div><div id="swapCurrent" class="selected-food hidden"></div><p class="hint hidden" id="swapHint">בחר מזון מאותה קבוצת מזון. הכמות המוצעת תותאם לפי המאקרו המרכזי בקבוצה, ותוכל לערוך אותה לאחר ההחלפה.</p><input id="swapSearch" class="search" placeholder="חיפוש חלופה…"/><div class="swap-list" id="swapOptions"></div></div></div>
 
-<div class="overlay" id="targetsModal" role="dialog" aria-modal="true" aria-labelledby="targetsTitle"><div class="modal"><div class="modal-head"><h2 id="targetsTitle">הגדרת יעדים יומיים</h2><button class="close" data-close="targetsModal">×</button></div><p class="hint">היעד מוגדר כרגע ל־2,517 קלוריות לפי החישוב הקודם (הוצאה יומית משוערת ועודף מתון). זו הערכה ראשונית, לא מספר קשיח. בגיל 17 ובמטרה לבנות מסת שריר כדאי לאמת אותו עם דיאטן/ית ספורט ולהתאים לפי המגמה לאורך זמן.</p><form id="targetsForm"><div class="form-grid"><div class="field"><label for="goalKcal">קלוריות</label><input id="goalKcal" type="number" min="0" step="25" required/></div><div class="field"><label for="goalP">חלבון (גרם)</label><input id="goalP" type="number" min="0" step="5" required/></div><div class="field"><label for="goalC">פחמימות (גרם)</label><input id="goalC" type="number" min="0" step="5" required/></div><div class="field"><label for="goalF">שומן (גרם)</label><input id="goalF" type="number" min="0" step="5" required/></div></div><div class="form-actions"><button class="btn primary" type="submit">שמור יעדים</button><button class="btn" data-close="targetsModal" type="button">ביטול</button></div></form></div></div>
+<div class="overlay" id="targetsModal" role="dialog" aria-modal="true" aria-labelledby="targetsTitle"><div class="modal"><div class="modal-head"><h2 id="targetsTitle">הגדרת יעדים יומיים</h2><button class="close" data-close="targetsModal">×</button></div><p class="hint">היעד מוגדר כרגע ל־2,517 קלוריות כהערכה ראשונית בלבד, לא כמספר קשיח. יש להתאים אותו לפי הפעילות, ההרגשה, ההתאוששות ומגמת ההתקדמות; דיאטן/ית ספורט יכול/ה לעזור לוודא שהוא מתאים לך.</p><form id="targetsForm"><div class="form-grid"><div class="field"><label for="goalKcal">קלוריות</label><input id="goalKcal" type="number" min="0" step="25" required/></div><div class="field"><label for="goalP">חלבון (גרם)</label><input id="goalP" type="number" min="0" step="5" required/></div><div class="field"><label for="goalC">פחמימות (גרם)</label><input id="goalC" type="number" min="0" step="5" required/></div><div class="field"><label for="goalF">שומן (גרם)</label><input id="goalF" type="number" min="0" step="5" required/></div></div><div class="form-actions"><button class="btn primary" type="submit">שמור יעדים</button><button class="btn" data-close="targetsModal" type="button">ביטול</button></div></form></div></div>
 
 <div class="overlay" id="customModal" role="dialog" aria-modal="true" aria-labelledby="customTitle"><div class="modal"><div class="modal-head"><h2 id="customTitle">הוספת מזון אישי</h2><button class="close" data-close="customModal">×</button></div><p class="hint">מומלץ להעתיק מהתווית את הערכים ל־100 גרם. אם התווית היא למנה, חשב את הערכים ל־100 גרם לפני השמירה.</p><form id="customForm"><div class="form-grid"><div class="field"><label for="customName">שם המזון</label><input id="customName" required placeholder="למשל: יוגורט חלבון מותג…"/></div><div class="field"><label for="customCat">קטגוריה</label><select id="customCat"><option value="protein">חלבון</option><option value="carbs">פחמימה</option><option value="fat">שומן</option><option value="fruit">פרי</option><option value="other">אחר</option></select></div><div class="field"><label for="customKcal">קלוריות ל־100 גרם</label><input id="customKcal" type="number" min="0" step="0.1" required/></div><div class="field"><label for="customP">חלבון (גרם ל־100 גרם)</label><input id="customP" type="number" min="0" step="0.1" required/></div><div class="field"><label for="customC">פחמימות (גרם ל־100 גרם)</label><input id="customC" type="number" min="0" step="0.1" required/></div><div class="field"><label for="customF">שומן (גרם ל־100 גרם)</label><input id="customF" type="number" min="0" step="0.1" required/></div><div class="field"><label for="customUnit">שם היחידה</label><input id="customUnit" placeholder="פרוסה / כוס / גביע" value="יחידה"/></div><div class="field"><label for="customUnitG">משקל של יחידה (גרם)</label><input id="customUnitG" type="number" min="0.1" step="0.1" value="100"/></div></div><div class="form-actions"><button class="btn primary" type="submit">שמור במאגר</button><button class="btn" data-close="customModal" type="button">ביטול</button></div></form></div></div>
 
@@ -314,11 +496,11 @@ button:active,.btn:active,.tab:active,.chip:active,.tiny-btn:active,.swap-option
 const $=id=>document.getElementById(id);
 const categoryNames={protein:'חלבון',carbs:'פחמימה',fat:'שומן',fruit:'פרי',other:'אחר'};
 const mealNames={breakfast:'ארוחת בוקר',lunch:'ארוחת צהריים',snack:'ארוחת ביניים',dinner:'ארוחת ערב'};
-const mealIcons={breakfast:'☀️',lunch:'🍽️',snack:'🥣',dinner:'🌙'};
+const mealIcons={breakfast:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18h16M6 14a6 6 0 0 1 12 0M12 3v3M4.8 7.2l2.1 2.1M19.2 7.2l-2.1 2.1"/></svg>',lunch:'<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/><path d="M3 4v6M1.5 4v3.5M4.5 4v3.5M3 10v10M21 4c-2 2-2 5 0 7v9"/></svg>',snack:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16l-1.7 8a2 2 0 0 1-2 1.6H7.7a2 2 0 0 1-2-1.6L4 10Z"/><path d="M7 7c0-1.6 1.2-2.2 1.2-3.5M12 7c0-1.6 1.2-2.2 1.2-3.5M17 7c0-1.6 1.2-2.2 1.2-3.5"/></svg>',dinner:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 14.7A8 8 0 0 1 9.3 4.5 8.5 8.5 0 1 0 19.5 14.7Z"/><path d="M15.5 3.5v4M13.5 5.5h4"/></svg>'};
 
-const mealShares={breakfast:0.23,lunch:0.32,snack:0.15,dinner:0.30};
-const brandedExampleIds=new Set(['cottage3','yellowcheese','halloumi','whitecheese5']);
-const variableDataIds=new Set(['tuna','whitefish','beeflean','protein_yogurt','protein_drink','bread','ricecake','pita','labneh','pastrami','cornflakes','crackers','peanutbutter','protein_powder','milk3','whitecheese3','yellowcheese5','bulgarian5','bulgarian9','safed5','symfonia5','chickenliver','chickendrumstick','turkeyshawarma','halibut','nileperch','seabass','seabream','puffedrice','branflakes','granola','ricepaper','tortilla','almondbutter','butter','olives','dates_general','medjool','walnuts','avocado','ptitim','sweetpotato','peas','lentils','cashews','pecans','chia','pumpkinseeds','sunflowerseeds','pita']);
+const mealShares={breakfast:0.273,lunch:0.278,snack:0.188,dinner:0.261};
+const brandedExampleIds=new Set(['cottage3','yellowcheese','halloumi','whitecheese5','milk3','yoplait_go_zero','muller_active','cashewbutter','cream9','pro_coffee0','pro_hazelnut0']);
+const variableDataIds=new Set(['tuna','whitefish','beeflean','protein_yogurt','protein_drink','bread','ricecake','pita','labneh','pastrami','cornflakes','crackers','peanutbutter','protein_powder','milk3','whitecheese3','yellowcheese5','bulgarian5','bulgarian9','safed5','symfonia5','chickenliver','chickendrumstick','turkeyshawarma','halibut','nileperch','seabass','seabream','puffedrice','branflakes','granola','ricepaper','tortilla','almondbutter','butter','olives','dates_general','medjool','walnuts','avocado','ptitim','sweetpotato','peas','lentils','cashews','pecans','chia','pumpkinseeds','sunflowerseeds','pita','yoplait_go_zero','muller_active','danone_lightfruit','yoplait_golite','symfonia_garlic','symfonia_plain','symfonia_olives','beef_sheitel','beef_sirloin','beef_filet','beef_weisbraten','beef_liver','chicken_quarter','speltcake','lahmit','wheatcooked','sweetpotato_boiled','potato_baked','cashewbutter','darkchocolate70','cream9','shkedia_tahini','cucumber','tomato','lettuce']);
 function foodDataLabel(food){
  if(food.custom)return 'לפי הערכים שהזנת — מומלץ להעתיק מהתווית';
  if(brandedExampleIds.has(food.id))return 'מוצר לדוגמה / ערך ייחוס — התווית שלך קובעת';
@@ -331,122 +513,1509 @@ function mealTarget(meal){
 }
 function progressCell(label,key,value,target,unit,cls){
  const safeTarget=Math.max(0.1,target),pct=value/safeTarget*100,remaining=target-value;
- const d=unit==='קל'?0:1;const status=remaining>=0?`נותרו ${fmt(remaining,d)} ${unit}`:`מעל היעד ב־${fmt(-remaining,d)} ${unit}`;
+ const d=0;const status=remaining>=0?`נותרו ${fmt(remaining,d)} ${unit}`:`מעל היעד ב־${fmt(-remaining,d)} ${unit}`;
  return `<div class="meal-target-cell ${cls}"><div class="meal-target-head"><span>${label}</span><span>${Math.round(pct)}%</span></div><div class="meal-target-values">${fmt(value,d)} / ${fmt(target,d)} ${unit}</div><div class="meal-target-status">${status}</div><div class="meal-target-bar"><span style="width:${Math.max(0,Math.min(100,pct))}%"></span></div></div>`;
 }
 function mealProgressHTML(meal,sum,plan){
  const t=mealTarget(meal);
- return `<div class="meal-progress"><div class="meal-progress-title"><strong>התקדמות הארוחה</strong><span>בתכנון ${fmt(plan.kcal)} קל · נאכל ${fmt(sum.kcal)} קל · יעד ${fmt(t.kcal)} קל</span></div><div class="meal-target-grid">${progressCell('קלוריות','kcal',sum.kcal,t.kcal,'קל','cal')}${progressCell('חלבון','p',sum.p,t.p,'ג׳','protein')}${progressCell('פחמימות','c',sum.c,t.c,'ג׳','carbs')}${progressCell('שומן','f',sum.f,t.f,'ג׳','fat')}</div><div class="meal-progress-note">הסיכום כולל רק פריטים שסומנו כנאכלו, לפי הכמות בפועל.</div></div>`;
+ return `<div class="meal-progress"><div class="meal-progress-title"><strong>התקדמות הארוחה</strong><span>בתכנון ${fmt(plan.kcal)} קל · נאכל ${fmt(sum.kcal)} קל · יעד ${fmt(t.kcal)} קל</span></div><div class="meal-target-grid">${progressCell('קלוריות','kcal',sum.kcal,t.kcal,'קל','cal')}${progressCell('חלבון','p',sum.p,t.p,'ג׳','protein')}${progressCell('פחמימות','c',sum.c,t.c,'ג׳','carbs')}${progressCell('שומן','f',sum.f,t.f,'ג׳','fat')}</div><div class="meal-progress-note">הסיכום כולל רק פריטים שסומנו כנאכלו, לפי הכמות בפועל. החישוב מסוכם לפני עיגול התצוגה.</div></div>`;
 }
 
 const seedFoods=[
-{id:'cottage3',name:'קוטג׳ 3% (דוגמה: תנובה)',cat:'protein',kcal:77,p:11,c:1.5,f:3,unit:'כף',g:22,base:'נתון ייחוס למוצר תנובה 3%; כף בדוגמה כ־22 גרם; התווית שעל המוצר שלך קובעת'},
-{id:'egg',name:'ביצה שלמה',cat:'protein',kcal:143,p:12.6,c:0.7,f:9.5,unit:'ביצה בינונית',g:50,base:'נתון ייחוס לביצה שלמה; משקל אכיל ללא קליפה כ־50 גרם, משתנה לפי גודל'},
-{id:'chicken',name:'חזה עוף מבושל/צלוי ללא עור',cat:'protein',kcal:165,p:31,c:0,f:3.6,unit:'מנה מבושלת (100 גרם)',g:100,base:'נתון ייחוס USDA למאה גרם לאחר בישול/צלייה ללא עור וללא שמן נוסף; נא ובושל שוקלים אחרת'},
-{id:'turkey',name:'חזה הודו צלוי/מבושל',cat:'protein',kcal:147,p:30.1,c:0,f:2.1,unit:'מנת הודו מבושלת',g:100,base:'ערך ייחוס לחזה הודו מבושל; משקל לאחר הכנה, ללא שמן נוסף'},
-{id:'tuna',name:'טונה במים, מסוננת (אומדן ייחוס)',cat:'protein',kcal:116,p:25.5,c:0,f:0.8,unit:'קופסה מסוננת (משתנה)',g:112,base:'ערך ייחוס כללי לטונה במים מסוננת; השתמש במשקל המסונן ובתווית המותג שלך'},
-{id:'whitefish',name:'דג לבן מבושל (אומדן כללי)',cat:'protein',kcal:120,p:24,c:0,f:2,unit:'מנת דג מבושל',g:150,base:'אומדן בלבד — מין הדג, החלק ושיטת ההכנה משנים ערכים'},
-{id:'beeflean',name:'בשר בקר רזה מבושל (אומדן)',cat:'protein',kcal:217,p:26,c:0,f:12,unit:'מנה מבושלת',g:100,base:'אומדן בלבד — הערכים תלויים בנתח, באחוז השומן ובשמן בבישול'},
-{id:'yellowcheese',name:'גבינה צהובה 9% (דוגמה: תנובה)',cat:'protein',kcal:202,p:30,c:0.2,f:9,unit:'פרוסה',g:26,base:'נתון ייחוס למוצר תנובה 9%; פרוסה בדוגמה כ־26 גרם, בדוק אריזה'},
-{id:'halloumi',name:'חלומי 24% (דוגמה: גד)',cat:'protein',kcal:304,p:21,c:1,f:24,unit:'פרוסה דקה',g:10,base:'נתון ייחוס לחלומי גד 24%; גודל החיתוך משתנה'},
-{id:'protein_yogurt',name:'יוגורט עתיר חלבון (אומדן)',cat:'protein',kcal:70,p:10,c:5,f:1,unit:'גביע (200 גרם)',g:200,base:'אומדן לדוגמה של כ־20 גרם חלבון בגביע; משתנה לפי מותג וטעם — בדוק תווית'},
-{id:'protein_drink',name:'משקה חלבון מוכן (אומדן)',cat:'protein',kcal:60,p:8,c:4,f:1,unit:'בקבוק (250 מ״ל)',g:250,base:'אומדן: כ־20 גרם חלבון לבקבוק 250 מ״ל; מותגים ובקבוקים שונים — תווית המוצר קובעת'},
-{id:'bread',name:'לחם מלא עד 240 קל ל־100 גרם (דוגמה)',cat:'carbs',kcal:230,p:10,c:43,f:2.8,unit:'פרוסה',g:35,base:'דוגמה שמתאימה לכלל שלך: בחר לחם עם עד 240 קל ל־100 גרם. הערכים בפועל לפי תווית'},
-{id:'ricecake',name:'פריכית אורז גדולה (דוגמה כללית)',cat:'carbs',kcal:384,p:8.5,c:79,f:2.8,unit:'פריכית גדולה',g:7.8,base:'כ־30 קל ליחידה גדולה במשקל כ־7.8 גרם. אין לבלבל עם פריכונים קטנים של כ־7 קל ליחידה; בדוק אריזה'},
-{id:'rice',name:'אורז לבן מבושל',cat:'carbs',kcal:130,p:2.7,c:28.2,f:0.3,unit:'כוס מבושלת',g:158,base:'משקל לאחר בישול'},
-{id:'pasta',name:'פסטה מבושלת',cat:'carbs',kcal:157,p:5.8,c:30.9,f:0.9,unit:'כוס מבושלת',g:140,base:'משקל לאחר בישול'},
-{id:'potato',name:'תפוח אדמה מבושל ללא שמן',cat:'carbs',kcal:87,p:1.9,c:20.1,f:0.1,unit:'תפוח אדמה בינוני (חלק אכיל)',g:170,base:'ערך ייחוס לתפוח אדמה מבושל; משקל החלק האכיל משתנה. לא לאפוי/מטוגן'},
-{id:'oats',name:'שיבולת שועל יבשה',cat:'carbs',kcal:389,p:16.9,c:66.3,f:6.9,unit:'מנה',g:40,base:'שקילה לפני הכנה'},
-{id:'pita',name:'פיתה מקמח מלא (אומדן)',cat:'carbs',kcal:260,p:9,c:53,f:2.5,unit:'פיתה',g:90,base:'ערך ייחוס משוער; תלוי במאפייה ובגודל. אם יש תווית השתמש בה'},
-{id:'bulgur',name:'בורגול מבושל',cat:'carbs',kcal:83,p:3.1,c:18.6,f:0.2,unit:'כוס',g:180,base:'משקל לאחר בישול'},
-{id:'quinoa',name:'קינואה מבושלת',cat:'carbs',kcal:120,p:4.4,c:21.3,f:1.9,unit:'כוס',g:185,base:'משקל לאחר בישול'},
-{id:'couscous',name:'קוסקוס מבושל',cat:'carbs',kcal:112,p:3.8,c:23.2,f:0.2,unit:'כוס מבושלת',g:157,base:'נתון ייחוס לקוסקוס מבושל; תוספת שמן/רוטב משנה ערכים'},
-{id:'tahini',name:'טחינה גולמית',cat:'fat',kcal:595,p:17,c:21,f:54,unit:'כף',g:15,base:'לפני הוספת מים'},
-{id:'oliveoil',name:'שמן זית',cat:'fat',kcal:884,p:0,c:0,f:100,unit:'כף',g:13.5,base:'להשתמש קר בלבד לפי ההעדפה שלך'},
-{id:'almonds',name:'שקדים טבעיים',cat:'fat',kcal:579,p:21.2,c:21.6,f:49.9,unit:'שקד בינוני',g:1.2,base:'נתון ייחוס ל־100 גרם; שקד יחיד כ־1.2 גרם בקירוב, תלוי בגודל'},
-{id:'walnuts',name:'אגוזי מלך',cat:'fat',kcal:654,p:15.2,c:13.7,f:65.2,unit:'חופן קטן',g:15,base:'משקל משוער'},
-{id:'peanutbutter',name:'חמאת בוטנים טבעית',cat:'fat',kcal:588,p:25,c:20,f:50,unit:'כף',g:16,base:'ללא תוספת סוכר/שמן ככל האפשר'},
-{id:'avocado',name:'אבוקדו',cat:'fat',kcal:160,p:2,c:8.5,f:14.7,unit:'חצי אבוקדו קטן',g:75,base:'החלק האכיל בלבד'},
-{id:'apple',name:'תפוח',cat:'fruit',kcal:52,p:0.3,c:13.8,f:0.2,unit:'תפוח בינוני',g:180,base:'חלק אכיל'},
-{id:'banana',name:'בננה',cat:'fruit',kcal:89,p:1.1,c:22.8,f:0.3,unit:'בננה בינונית',g:120,base:'ללא קליפה'},
-{id:'medjool',name:'תמר מג׳הול',cat:'fruit',kcal:277,p:1.8,c:75,f:0.2,unit:'תמר בינוני',g:24,base:'ערך ייחוס לתמר מג׳הול; פרי גדול עשוי לשקול יותר ולכן יש לשקול אם רוצים דיוק'},
-{id:'grapes',name:'ענבים',cat:'fruit',kcal:69,p:0.7,c:18.1,f:0.2,unit:'כוס',g:150,base:'משקל משוער'},
-{id:'orange',name:'תפוז',cat:'fruit',kcal:47,p:0.9,c:11.8,f:0.1,unit:'תפוז בינוני',g:130,base:'חלק אכיל'},
-{id:'kiwi',name:'קיווי',cat:'fruit',kcal:61,p:1.1,c:14.7,f:0.5,unit:'קיווי',g:75,base:'חלק אכיל'},
-{id:'strawberries',name:'תותים',cat:'fruit',kcal:32,p:0.7,c:7.7,f:0.3,unit:'כוס חתוכה',g:150,base:'משקל משוער'},
-{id:'whitecheese5',name:'גבינה לבנה 5% (דוגמה: תנובה)',cat:'protein',kcal:98,p:9,c:4.5,f:5,unit:'כף (קירוב)',g:20,base:'נתון ייחוס למוצר תנובה 5%; מותגים אחרים עשויים להיות שונים — התווית קובעת'},
-{id:'labneh',name:'לאבנה',cat:'protein',kcal:170,p:8,c:4,f:13,unit:'כף',g:20,base:'משתנה לפי אחוז השומן'},
-{id:'pastrami',name:'פסטרמה דלת שומן',cat:'protein',kcal:110,p:19,c:3,f:2.5,unit:'פרוסה',g:15,base:'משתנה לפי מותג'},
-{id:'chicken_thigh',name:'פרגית / ירך עוף מבושלת ללא עור',cat:'protein',kcal:179,p:24.8,c:0,f:8.2,unit:'מנה מבושלת',g:100,base:'ערך ייחוס לירך עוף ללא עור לאחר הכנה; נתח, הסרת עור ושמן משפיעים'},
-{id:'salmon',name:'סלמון אטלנטי מבושל (ערך ייחוס)',cat:'protein',kcal:206,p:22.1,c:0,f:12.35,unit:'מנה מבושלת',g:150,base:'ערך ייחוס ל־100 גרם סלמון אטלנטי מגידול, מבושל בחום יבש; זנים/שמן משנים ערכים'},
-{id:'tilapia',name:'אמנון מבושל (ערך ייחוס)',cat:'protein',kcal:128,p:26.2,c:0,f:2.7,unit:'מנה מבושלת',g:150,base:'ערך ייחוס לדג מבושל ללא תוספת שמן; תלוי בשיטת ההכנה'},
-{id:'cornflakes',name:'קורנפלקס',cat:'carbs',kcal:357,p:7,c:84,f:0.4,unit:'כוס',g:28,base:'משתנה לפי מותג'},
-{id:'crackers',name:'קרקר/לחמית קטנים (אומדן)',cat:'carbs',kcal:430,p:10,c:70,f:12,unit:'קרקר קטן',g:7,base:'יחידה של 7 גרם ≈ 30 קל לפי הערך הכללי; הקרקרים שונים מאוד — התווית קובעת'},
-{id:'ptitim',name:'פתיתים מבושלים',cat:'carbs',kcal:150,p:4.5,c:30,f:1,unit:'כוס',g:160,base:'משקל לאחר בישול'},
-{id:'sweetpotato',name:'בטטה אפויה',cat:'carbs',kcal:90,p:2,c:21,f:0.2,unit:'בטטה בינונית',g:180,base:'ללא שמן'},
-{id:'peas',name:'אפונה מבושלת',cat:'carbs',kcal:84,p:5.4,c:15,f:0.2,unit:'כוס',g:160,base:'מבושלת ומסוננת'},
-{id:'lentils',name:'עדשים מבושלות',cat:'carbs',kcal:116,p:9,c:20,f:0.4,unit:'כוס',g:198,base:'מבושלות ומסוננות'},
-{id:'cashews',name:'קשיו טבעי',cat:'fat',kcal:553,p:18.2,c:30.2,f:43.9,unit:'חופן קטן',g:15,base:'משקל משוער'},
-{id:'pecans',name:'פקאן טבעי',cat:'fat',kcal:691,p:9.2,c:13.9,f:72,unit:'חופן קטן',g:15,base:'משקל משוער'},
-{id:'chia',name:'זרעי צ׳יה',cat:'fat',kcal:486,p:16.5,c:42.1,f:30.7,unit:'כף',g:12,base:'משקל משוער'},
-{id:'pumpkinseeds',name:'גרעיני דלעת',cat:'fat',kcal:559,p:30,c:11,f:49,unit:'כף',g:10,base:'ללא קליפה; משקל משוער'},
-{id:'olives',name:'זיתים',cat:'fat',kcal:145,p:1,c:4,f:15,unit:'זית',g:4,base:'משתנה לפי סוג וגודל'},
-{id:'mango',name:'מנגו',cat:'fruit',kcal:60,p:0.8,c:15,f:0.4,unit:'כוס חתוך',g:165,base:'חלק אכיל'},
-{id:'pineapple',name:'אננס',cat:'fruit',kcal:50,p:0.5,c:13.1,f:0.1,unit:'כוס חתוך',g:165,base:'חלק אכיל'},
-{id:'melon',name:'מלון',cat:'fruit',kcal:34,p:0.8,c:8.2,f:0.2,unit:'כוס חתוך',g:160,base:'חלק אכיל'},
-{id:'watermelon',name:'אבטיח',cat:'fruit',kcal:30,p:0.6,c:7.6,f:0.2,unit:'כוס חתוך',g:150,base:'חלק אכיל'},
-{id:'pear',name:'אגס',cat:'fruit',kcal:57,p:0.4,c:15.2,f:0.1,unit:'אגס בינוני',g:175,base:'חלק אכיל'},
-{id:'peach',name:'אפרסק',cat:'fruit',kcal:39,p:0.9,c:9.5,f:0.3,unit:'אפרסק',g:150,base:'חלק אכיל'},
-{id:'blueberries',name:'אוכמניות',cat:'fruit',kcal:57,p:0.7,c:14.5,f:0.3,unit:'כוס',g:148,base:'טריות'},
-{id:'dates_general',name:'תמרים (ממוצעים)',cat:'fruit',kcal:282,p:2.5,c:75,f:0.4,unit:'תמר קטן',g:8,base:'הערך משתנה מאוד לפי זן וגודל'},
-
-{id:'milk3',name:'חלב 3% (אומדן)',cat:'protein',kcal:61,p:3.2,c:4.8,f:3.3,unit:'כוס חלב',g:200,base:'ערך ייחוס לחלב 3%; בדוק תווית של המותג שלך'},
-{id:'whitecheese3',name:'גבינה לבנה 3% (אומדן)',cat:'protein',kcal:80,p:10.5,c:3,f:3,unit:'כף (קירוב)',g:20,base:'אומדן בלבד — משתנה לפי יצרן; בדוק תווית'},
-{id:'yellowcheese5',name:'גבינה צהובה 5% (אומדן)',cat:'protein',kcal:180,p:32,c:1,f:5,unit:'פרוסה',g:25,base:'אומדן בלבד למוצר מופחת שומן; בדוק תווית'},
-{id:'bulgarian5',name:'גבינה בולגרית 5% (אומדן)',cat:'protein',kcal:121,p:18,c:1.5,f:5,unit:'פרוסה',g:30,base:'אומדן למוצר מסוג בולגרית 5%; ערכים לפי מותג'},
-{id:'bulgarian9',name:'גבינה בולגרית 9% (אומדן)',cat:'protein',kcal:160,p:16,c:2,f:9,unit:'פרוסה',g:30,base:'אומדן בלבד — בדוק תווית'},
-{id:'safed5',name:'גבינה צפתית 5% (אומדן)',cat:'protein',kcal:135,p:17,c:2,f:5,unit:'פרוסה',g:30,base:'אומדן בלבד — סוגי גבינה צפתית משתנים לפי יצרן'},
-{id:'symfonia5',name:'גבינת שמנת 5% בטעמים (אומדן)',cat:'protein',kcal:125,p:7,c:4,f:8,unit:'כף גבינה',g:20,base:'אומדן לממרח גבינה; מותג וטעם משנים ערכים — בדוק תווית'},
-{id:'chickenliver',name:'כבד עוף מבושל (אומדן ייחוס)',cat:'protein',kcal:167,p:24.5,c:0.9,f:6.5,unit:'מנת כבד מבושל',g:100,base:'ערך ייחוס כללי למוצר מבושל; שמן/טיגון משפיעים'},
-{id:'chickendrumstick',name:'שוק עוף מבושלת ללא עור (חלק אכיל)',cat:'protein',kcal:175,p:28.3,c:0,f:5.7,unit:'בשר אכיל משוק בינונית (אומדן)',g:75,base:'ערך ייחוס לבשר מבושל ללא עור; כמות הבשר האכיל בשוק משתנה'},
-{id:'turkeyshawarma',name:'שווארמה הודו (אומדן)',cat:'protein',kcal:170,p:27,c:1,f:6.5,unit:'מנה',g:100,base:'אומדן בלבד — נתח, תיבול ושמן משנים ערכים משמעותית'},
-{id:'cod',name:'בקלה מבושלת',cat:'protein',kcal:89,p:19.9,c:0,f:0.7,unit:'מנת בקלה',g:150,base:'נתון ייחוס לדג בקלה מבושל; ללא תוספת שמן'},
-{id:'halibut',name:'הליבוט מבושל (אומדן)',cat:'protein',kcal:111,p:22.5,c:0,f:1.6,unit:'מנת הליבוט',g:150,base:'אומדן ייחוס לדג רזה; שיטת הכנה משנה ערכים'},
-{id:'nileperch',name:'נסיכת הנילוס מבושלת (אומדן)',cat:'protein',kcal:96,p:20.1,c:0,f:1.7,unit:'מנת דג',g:150,base:'אומדן כללי לדג רזה; לבדוק לפי המוצר והכנה'},
-{id:'seabass',name:'לברק מבושל (אומדן)',cat:'protein',kcal:124,p:23,c:0,f:3,unit:'מנת לברק',g:150,base:'אומדן בלבד — סוג הדג ושיטת ההכנה משנים ערכים'},
-{id:'seabream',name:'דניס מבושל (אומדן)',cat:'protein',kcal:128,p:20,c:0,f:4.8,unit:'מנת דניס',g:150,base:'אומדן בלבד — סוג הדג ושיטת ההכנה משנים ערכים'},
-{id:'protein_powder',name:'אבקת חלבון (אומדן)',cat:'protein',kcal:400,p:80,c:8,f:6,unit:'סקופ',g:30,base:'אומדן כללי בלבד; ערכי אבקה ומשקל הסקופ לפי האריזה'},
-{id:'brownrice',name:'אורז מלא מבושל',cat:'carbs',kcal:123,p:2.7,c:25.6,f:1,unit:'כוס אורז מלא',g:195,base:'נתון ייחוס לאורז מלא מבושל; משקל כוס משתנה'},
-{id:'buckwheat',name:'כוסמת מבושלת',cat:'carbs',kcal:92,p:3.4,c:19.9,f:0.6,unit:'כוס כוסמת',g:168,base:'נתון ייחוס לכוסמת מבושלת'},
-{id:'puffedrice',name:'פצפוצי אורז (אומדן)',cat:'carbs',kcal:383,p:6.5,c:86,f:0.5,unit:'כוס',g:15,base:'אומדן לדגני אורז תפוחים; מוצר B&D/אחר עשוי להיות שונה — בדוק תווית'},
-{id:'branflakes',name:'ברנפלקס (אומדן)',cat:'carbs',kcal:320,p:10,c:65,f:3,unit:'כוס',g:30,base:'אומדן לדגני סובין; מותג ומתכון משנים ערכים'},
-{id:'granola',name:'גרנולה עד 420 קל ל־100 גרם (אומדן)',cat:'carbs',kcal:420,p:10,c:65,f:13,unit:'כוס',g:45,base:'ערך תקרה לפי כלל הטבלה שלך; בדוק שעל המוצר אכן עד 420 קל ל־100 גרם'},
-{id:'ricepaper',name:'דף אורז יבש (אומדן)',cat:'carbs',kcal:360,p:5,c:80,f:1.5,unit:'דף אורז',g:8,base:'אומדן כללי; משקל וערכים שונים בין מותגים'},
-{id:'tortilla',name:'טורטייה עד 320 קל ל־100 גרם (אומדן)',cat:'carbs',kcal:310,p:8,c:51,f:7.5,unit:'טורטייה',g:50,base:'בחר מוצר לפי כלל הטבלה שלך: עד 320 קל ל־100 גרם; הערכים בפועל לפי תווית'},
-{id:'almondbutter',name:'חמאת שקדים טבעית (אומדן)',cat:'fat',kcal:614,p:21,c:19,f:56,unit:'כף',g:16,base:'אומדן כללי לממרח שקדים טבעי; בדוק תווית'},
-{id:'flaxseed',name:'זרעי פשתן',cat:'fat',kcal:534,p:18.3,c:28.9,f:42.2,unit:'כף זרעי פשתן',g:10,base:'ערך ייחוס כללי לזרעי פשתן'},
-{id:'sunflowerseeds',name:'גרעיני חמנייה ללא קליפה',cat:'fat',kcal:584,p:20.8,c:20,f:51.5,unit:'כף גרעינים',g:10,base:'ערך ייחוס כללי; משקל כף משוער'},
-{id:'butter',name:'חמאה — מריחה דקה',cat:'fat',kcal:717,p:0.9,c:0.1,f:81,unit:'מריחה דקה',g:5,base:'ערך ייחוס לחמאה רגילה; הכמות למריחה משוערת'},
-{id:'persimmon',name:'אפרסמון',cat:'fruit',kcal:70,p:0.6,c:18.6,f:0.2,unit:'אפרסמון בינוני',g:170,base:'חלק אכיל; גודל הפרי משתנה'},
-{id:'grapefruit',name:'אשכולית',cat:'fruit',kcal:42,p:0.8,c:10.7,f:0.1,unit:'חצי אשכולית',g:120,base:'חלק אכיל; זן וגודל משתנים'},
-{id:'cherries',name:'דובדבנים',cat:'fruit',kcal:63,p:1.1,c:16,f:0.2,unit:'כוס דובדבנים',g:150,base:'ללא גלעינים, משקל משוער'},
-{id:'clementine',name:'קלמנטינה',cat:'fruit',kcal:47,p:0.9,c:12,f:0.2,unit:'קלמנטינה',g:75,base:'חלק אכיל; גודל משתנה'},
-{id:'apricot',name:'משמש',cat:'fruit',kcal:48,p:1.4,c:11.1,f:0.4,unit:'משמש',g:35,base:'טרי, חלק אכיל'},
-{id:'lychee',name:'ליצ׳י',cat:'fruit',kcal:66,p:0.8,c:16.5,f:0.4,unit:'ליצ׳י קלוף',g:10,base:'חלק אכיל; גודל משתנה'},
-{id:'plum',name:'שזיף',cat:'fruit',kcal:46,p:0.7,c:11.4,f:0.3,unit:'שזיף בינוני',g:66,base:'חלק אכיל; גודל משתנה'},
-{id:'passionfruit',name:'פסיפלורה',cat:'fruit',kcal:97,p:2.2,c:23.4,f:0.7,unit:'פסיפלורה',g:18,base:'תכולה אכילה; ערכים משתנים'}
-
-];
+  {
+    "id": "cottage3",
+    "name": "קוטג׳ 3% (דוגמה: תנובה)",
+    "cat": "protein",
+    "kcal": 77,
+    "p": 11,
+    "c": 1.5,
+    "f": 3,
+    "unit": "כף",
+    "g": 20,
+    "base": "ערך ייחוס לדוגמת תנובה 3%: 77 קל, 11 ג׳ חלבון, 1.5 ג׳ פחמימות ו־3 ג׳ שומן ל־100 ג׳. כף ≈ 20 ג׳; בדוק את התווית שלך."
+  },
+  {
+    "id": "egg",
+    "name": "ביצה שלמה",
+    "cat": "protein",
+    "kcal": 143,
+    "p": 12.6,
+    "c": 0.7,
+    "f": 9.5,
+    "unit": "ביצה בינונית",
+    "g": 50,
+    "base": "נתון ייחוס לביצה שלמה; משקל אכיל ללא קליפה כ־50 גרם, משתנה לפי גודל"
+  },
+  {
+    "id": "chicken",
+    "name": "חזה עוף מבושל/צלוי ללא עור",
+    "cat": "protein",
+    "kcal": 165,
+    "p": 31,
+    "c": 0,
+    "f": 3.6,
+    "unit": "מנה עוף",
+    "g": 120,
+    "base": "ערך ייחוס למאה גרם אחרי הכנה ללא שמן נוסף: 165 קל, 31 ג׳ חלבון, 0 ג׳ פחמימה, 3.6 ג׳ שומן. שקול אחרי הבישול; נא ובושל שוקלים אחרת."
+  },
+  {
+    "id": "turkey",
+    "name": "חזה הודו צלוי/מבושל",
+    "cat": "protein",
+    "kcal": 147,
+    "p": 30.1,
+    "c": 0,
+    "f": 2.1,
+    "unit": "מנה הודו",
+    "g": 120,
+    "base": "ערך ייחוס לחזה הודו מבושל; משקל לאחר הכנה, ללא שמן נוסף"
+  },
+  {
+    "id": "tuna",
+    "name": "טונה במים מסוננת",
+    "cat": "protein",
+    "kcal": 116,
+    "p": 25.5,
+    "c": 0,
+    "f": 0.8,
+    "unit": "מנה מסוננת",
+    "g": 80,
+    "base": "ערך ייחוס כללי: 116 קל, 25.5 ג׳ חלבון, 0 ג׳ פחמימות, 0.8 ג׳ שומן ל־100 ג׳. השתמש במשקל המסונן ובתווית המותג שלך."
+  },
+  {
+    "id": "whitefish",
+    "name": "דג לבן מבושל (אומדן כללי)",
+    "cat": "protein",
+    "kcal": 120,
+    "p": 24,
+    "c": 0,
+    "f": 2,
+    "unit": "פילה דג בינוני",
+    "g": 150,
+    "base": "אומדן בלבד — מין הדג, החלק ושיטת ההכנה משנים ערכים"
+  },
+  {
+    "id": "beeflean",
+    "name": "בשר בקר רזה מבושל (אומדן)",
+    "cat": "protein",
+    "kcal": 217,
+    "p": 26,
+    "c": 0,
+    "f": 12,
+    "unit": "מנה בקר",
+    "g": 120,
+    "base": "אומדן בלבד — הערכים תלויים בנתח, באחוז השומן ובשמן בבישול"
+  },
+  {
+    "id": "yellowcheese",
+    "name": "גבינה צהובה 9% (דוגמה: תנובה)",
+    "cat": "protein",
+    "kcal": 202,
+    "p": 30,
+    "c": 0.2,
+    "f": 9,
+    "unit": "פרוסה",
+    "g": 25,
+    "base": "ערך ייחוס לדוגמת מוצר 9%: 202 קל, 30 ג׳ חלבון, 0.2 ג׳ פחמימות, 9 ג׳ שומן ל־100 ג׳. משקל פרוסה משתנה לפי החיתוך והמותג."
+  },
+  {
+    "id": "halloumi",
+    "name": "חלומי 24% (דוגמה: גד)",
+    "cat": "protein",
+    "kcal": 304,
+    "p": 21,
+    "c": 1,
+    "f": 24,
+    "unit": "פרוסה דקה",
+    "g": 10,
+    "base": "נתון ייחוס לחלומי גד 24%; גודל החיתוך משתנה"
+  },
+  {
+    "id": "protein_yogurt",
+    "name": "יוגורט עתיר חלבון (אומדן כללי)",
+    "cat": "protein",
+    "kcal": 65,
+    "p": 10,
+    "c": 4,
+    "f": 1,
+    "unit": "גביע",
+    "g": 200,
+    "base": "אומדן לגביע של 200 ג׳ עם כ־20 ג׳ חלבון; אינו מייצג כל מותג או טעם. השתמש בתווית המדויקת."
+  },
+  {
+    "id": "protein_drink",
+    "name": "משקה חלבון מוכן (אומדן)",
+    "cat": "protein",
+    "kcal": 60,
+    "p": 8,
+    "c": 4,
+    "f": 1,
+    "unit": "בקבוק (250 מ״ל)",
+    "g": 250,
+    "base": "אומדן: כ־20 גרם חלבון לבקבוק 250 מ״ל; מותגים ובקבוקים שונים — תווית המוצר קובעת"
+  },
+  {
+    "id": "bread",
+    "name": "לחם מלא עד 240 קל ל־100 גרם (יש לבדוק תווית)",
+    "cat": "carbs",
+    "kcal": 230,
+    "p": 10,
+    "c": 43,
+    "f": 2.8,
+    "unit": "פרוסה",
+    "g": 35,
+    "base": "בחר לחם העומד בכלל מהטבלה שלך: עד 240 קל ל־100 ג׳. כל שאר הערכים לדוגמה בלבד, כי הם משתנים בין מאפיות ומותגים."
+  },
+  {
+    "id": "ricecake",
+    "name": "פריכית אורז (ערך ייחוס)",
+    "cat": "carbs",
+    "kcal": 384,
+    "p": 8.3,
+    "c": 79,
+    "f": 3,
+    "unit": "פריכית",
+    "g": 8,
+    "base": "ערך ייחוס לפריכית גדולה במשקל כ־8 ג׳. יש מותגים/גדלים עם 26–32 קלוריות ליחידה; שקול פריכית או העתק תווית."
+  },
+  {
+    "id": "rice",
+    "name": "אורז לבן מבושל",
+    "cat": "carbs",
+    "kcal": 130,
+    "p": 2.7,
+    "c": 27.8,
+    "f": 0.3,
+    "unit": "כוס אורז מבושל",
+    "g": 158,
+    "base": "ערך ייחוס לאורז מבושל: 130 קל, 2.7 ג׳ חלבון, 27.8 ג׳ פחמימות, 0.3 ג׳ שומן ל־100 ג׳. כוס מבושלת שטוחה ≈ 158 ג׳; משקל בפועל תלוי בזן, בכמות המים ובדחיסה."
+  },
+  {
+    "id": "pasta",
+    "name": "פסטה מבושלת",
+    "cat": "carbs",
+    "kcal": 157,
+    "p": 5.76,
+    "c": 28.88,
+    "f": 0.92,
+    "unit": "כוס מבושלת",
+    "g": 140,
+    "base": "ערך ייחוס לפסטה מסולסלת מבושלת ל־100 ג׳: 157 קק״ל, 5.76 ג׳ חלבון, 28.88 ג׳ פחמימות ו־0.92 ג׳ שומן; סוגי פסטה והכנה שונים עשויים להשתנות"
+  },
+  {
+    "id": "potato",
+    "name": "תפוח אדמה מבושל ללא שמן",
+    "cat": "carbs",
+    "kcal": 87,
+    "p": 1.9,
+    "c": 20.1,
+    "f": 0.1,
+    "unit": "תפוח אדמה בינוני (חלק אכיל)",
+    "g": 170,
+    "base": "ערך ייחוס לתפוח אדמה מבושל; משקל החלק האכיל משתנה. לא לאפוי/מטוגן"
+  },
+  {
+    "id": "oats",
+    "name": "שיבולת שועל קוואקר יבשה (אומדן)",
+    "cat": "carbs",
+    "kcal": 389,
+    "p": 16.9,
+    "c": 66.3,
+    "f": 6.9,
+    "unit": "מנה",
+    "g": 40,
+    "base": "ערך ייחוס לשיבולת שועל יבשה; למוצר קוואקר ארוז יש להשתמש בתווית אם היא שונה."
+  },
+  {
+    "id": "pita",
+    "name": "פיתה מחיטה מלאה וסובין (אומדן)",
+    "cat": "carbs",
+    "kcal": 260,
+    "p": 9,
+    "c": 53,
+    "f": 2.5,
+    "unit": "פיתה",
+    "g": 90,
+    "base": "המשקל והערכים משתנים לפי מאפייה וגודל. המשקל המוגדר לפיתה כאן הוא 90 ג׳ בקירוב; תווית האריזה גוברת."
+  },
+  {
+    "id": "bulgur",
+    "name": "בורגול מבושל",
+    "cat": "carbs",
+    "kcal": 83,
+    "p": 3.1,
+    "c": 18.6,
+    "f": 0.2,
+    "unit": "כוס",
+    "g": 180,
+    "base": "משקל לאחר בישול"
+  },
+  {
+    "id": "quinoa",
+    "name": "קינואה מבושלת",
+    "cat": "carbs",
+    "kcal": 120,
+    "p": 4.4,
+    "c": 21.3,
+    "f": 1.9,
+    "unit": "כוס",
+    "g": 185,
+    "base": "משקל לאחר בישול"
+  },
+  {
+    "id": "couscous",
+    "name": "קוסקוס מבושל",
+    "cat": "carbs",
+    "kcal": 112,
+    "p": 3.8,
+    "c": 23.2,
+    "f": 0.2,
+    "unit": "כוס מבושלת",
+    "g": 157,
+    "base": "נתון ייחוס לקוסקוס מבושל; תוספת שמן/רוטב משנה ערכים"
+  },
+  {
+    "id": "tahini",
+    "name": "טחינה גולמית",
+    "cat": "fat",
+    "kcal": 595,
+    "p": 17,
+    "c": 21,
+    "f": 54,
+    "unit": "כף",
+    "g": 15,
+    "base": "טחינה גולמית 100%: ערך ייחוס ל־100 ג׳; לפני הוספת מים, לימון או תיבול."
+  },
+  {
+    "id": "oliveoil",
+    "name": "שמן זית",
+    "cat": "fat",
+    "kcal": 884,
+    "p": 0,
+    "c": 0,
+    "f": 100,
+    "unit": "כף",
+    "g": 13.5,
+    "base": "שמן זית 884 קל ו־100 ג׳ שומן ל־100 ג׳. לפי ההעדפה שלך: שימוש קר בלבד, הוספה לאחר בישול או לסלט."
+  },
+  {
+    "id": "almonds",
+    "name": "שקדים טבעיים",
+    "cat": "fat",
+    "kcal": 579,
+    "p": 21.2,
+    "c": 21.6,
+    "f": 49.9,
+    "unit": "שקד",
+    "g": 1.2,
+    "base": "נתון ייחוס ל־100 גרם; שקד יחיד כ־1.2 גרם בקירוב, תלוי בגודל"
+  },
+  {
+    "id": "walnuts",
+    "name": "אגוזי מלך",
+    "cat": "fat",
+    "kcal": 654,
+    "p": 15.2,
+    "c": 13.7,
+    "f": 65.2,
+    "unit": "חופן קטן",
+    "g": 15,
+    "base": "משקל משוער"
+  },
+  {
+    "id": "peanutbutter",
+    "name": "חמאת בוטנים טבעית",
+    "cat": "fat",
+    "kcal": 588,
+    "p": 25,
+    "c": 20,
+    "f": 50,
+    "unit": "כף",
+    "g": 16,
+    "base": "ללא תוספת סוכר/שמן ככל האפשר"
+  },
+  {
+    "id": "avocado",
+    "name": "אבוקדו",
+    "cat": "fat",
+    "kcal": 160,
+    "p": 2,
+    "c": 8.5,
+    "f": 14.7,
+    "unit": "חצי אבוקדו קטן",
+    "g": 75,
+    "base": "החלק האכיל בלבד"
+  },
+  {
+    "id": "apple",
+    "name": "תפוח",
+    "cat": "fruit",
+    "kcal": 52,
+    "p": 0.3,
+    "c": 13.8,
+    "f": 0.2,
+    "unit": "תפוח בינוני",
+    "g": 180,
+    "base": "חלק אכיל"
+  },
+  {
+    "id": "banana",
+    "name": "בננה",
+    "cat": "fruit",
+    "kcal": 89,
+    "p": 1.1,
+    "c": 22.8,
+    "f": 0.3,
+    "unit": "בננה בינונית",
+    "g": 120,
+    "base": "ללא קליפה"
+  },
+  {
+    "id": "medjool",
+    "name": "תמר מג׳הול",
+    "cat": "fruit",
+    "kcal": 277,
+    "p": 1.8,
+    "c": 75,
+    "f": 0.2,
+    "unit": "תמר בינוני",
+    "g": 24,
+    "base": "ערך ייחוס לתמר מג׳הול; פרי גדול עשוי לשקול יותר ולכן יש לשקול אם רוצים דיוק"
+  },
+  {
+    "id": "grapes",
+    "name": "ענבים",
+    "cat": "fruit",
+    "kcal": 69,
+    "p": 0.7,
+    "c": 18.1,
+    "f": 0.2,
+    "unit": "כוס",
+    "g": 150,
+    "base": "משקל משוער"
+  },
+  {
+    "id": "orange",
+    "name": "תפוז",
+    "cat": "fruit",
+    "kcal": 47,
+    "p": 0.9,
+    "c": 11.8,
+    "f": 0.1,
+    "unit": "תפוז בינוני",
+    "g": 130,
+    "base": "חלק אכיל"
+  },
+  {
+    "id": "kiwi",
+    "name": "קיווי",
+    "cat": "fruit",
+    "kcal": 61,
+    "p": 1.1,
+    "c": 14.7,
+    "f": 0.5,
+    "unit": "קיווי",
+    "g": 75,
+    "base": "חלק אכיל"
+  },
+  {
+    "id": "strawberries",
+    "name": "תותים",
+    "cat": "fruit",
+    "kcal": 32,
+    "p": 0.7,
+    "c": 7.7,
+    "f": 0.3,
+    "unit": "כוס חתוכה",
+    "g": 150,
+    "base": "משקל משוער"
+  },
+  {
+    "id": "whitecheese5",
+    "name": "גבינה לבנה 5% (דוגמה: תנובה)",
+    "cat": "protein",
+    "kcal": 98,
+    "p": 9,
+    "c": 4.3,
+    "f": 5,
+    "unit": "כף בינונית",
+    "g": 30,
+    "base": "ערך ייחוס לדוגמת תנובה 5%: 98 קל, 9 ג׳ חלבון, 4.3 ג׳ פחמימות, 5 ג׳ שומן ל־100 ג׳. בדוק את תווית המוצר שלך."
+  },
+  {
+    "id": "labneh",
+    "name": "לאבנה 5% (ערך ייחוס למוצר לדוגמה)",
+    "cat": "protein",
+    "kcal": 87,
+    "p": 8.5,
+    "c": 2,
+    "f": 5,
+    "unit": "כף",
+    "g": 20,
+    "base": "ערך ייחוס שנמצא עבור לאבנה 5%: 87 קל, 8.5 ג׳ חלבון, 2 ג׳ פחמימות, 5 ג׳ שומן ל־100 ג׳. מותגים משתנים; בדוק אריזה."
+  },
+  {
+    "id": "pastrami",
+    "name": "פסטרמה 3% (אומדן — תווית נדרשת)",
+    "cat": "protein",
+    "kcal": 105,
+    "p": 19,
+    "c": 2.5,
+    "f": 2.5,
+    "unit": "פרוסה",
+    "g": 15,
+    "base": "אומדן בלבד לפסטרמה דלת שומן. יש להעתיק מהתווית את הערכים של הפסטרמה 3% שאתה קונה."
+  },
+  {
+    "id": "chicken_thigh",
+    "name": "פרגית / ירך עוף מבושלת ללא עור",
+    "cat": "protein",
+    "kcal": 179,
+    "p": 24.8,
+    "c": 0,
+    "f": 8.2,
+    "unit": "מנה פרגית",
+    "g": 120,
+    "base": "ערך ייחוס לירך עוף ללא עור לאחר הכנה; נתח, הסרת עור ושמן משפיעים"
+  },
+  {
+    "id": "salmon",
+    "name": "סלמון אטלנטי מבושל (ערך ייחוס)",
+    "cat": "protein",
+    "kcal": 206,
+    "p": 22.1,
+    "c": 0,
+    "f": 12.35,
+    "unit": "מנה מבושלת",
+    "g": 150,
+    "base": "ערך ייחוס ל־100 גרם סלמון אטלנטי מגידול, מבושל בחום יבש; זנים/שמן משנים ערכים"
+  },
+  {
+    "id": "tilapia",
+    "name": "אמנון מבושל (ערך ייחוס)",
+    "cat": "protein",
+    "kcal": 128,
+    "p": 26.2,
+    "c": 0,
+    "f": 2.7,
+    "unit": "מנה מבושלת",
+    "g": 150,
+    "base": "ערך ייחוס לדג מבושל ללא תוספת שמן; תלוי בשיטת ההכנה"
+  },
+  {
+    "id": "cornflakes",
+    "name": "קורנפלקס צהוב תלמה (פתיתי תירס קלויים)",
+    "cat": "carbs",
+    "kcal": 375,
+    "p": 7.0,
+    "c": 83.3,
+    "f": 0.9,
+    "unit": "מנה דגנים (30 ג׳)",
+    "g": 30,
+    "base": "ערכי ייחוס לפי דף תלמה לקורנפלקס אלופים: 375 קל, 7 ג׳ חלבון, 83.3 ג׳ פחמימות ו־0.9 ג׳ שומן ל־100 ג׳. מנה שמוצגת באתר היצרן היא 30 ג׳; האריזה שלך קובעת אם יש הבדל."
+  },
+  {
+    "id": "crackers",
+    "name": "קרקר קטן (כ־26–32 קל ליחידה; אומדן)",
+    "cat": "carbs",
+    "kcal": 430,
+    "p": 10,
+    "c": 70,
+    "f": 12,
+    "unit": "קרקר קטן",
+    "g": 7,
+    "base": "לפי כלל הטבלה: 26–32 קל ליחידה. 7 ג׳ הוא קירוב; המשקל והערכים משתנים לפי מוצר."
+  },
+  {
+    "id": "ptitim",
+    "name": "פתיתים מבושלים",
+    "cat": "carbs",
+    "kcal": 150,
+    "p": 4.5,
+    "c": 30,
+    "f": 1,
+    "unit": "כוס",
+    "g": 160,
+    "base": "משקל לאחר בישול"
+  },
+  {
+    "id": "sweetpotato",
+    "name": "בטטה אפויה ללא שמן (ערך ייחוס)",
+    "cat": "carbs",
+    "kcal": 90,
+    "p": 2,
+    "c": 21,
+    "f": 0.2,
+    "unit": "בטטה בינונית",
+    "g": 180,
+    "base": "ערך ייחוס כללי לבטטה אפויה ללא שמן; משקל החלק האכיל משתנה."
+  },
+  {
+    "id": "peas",
+    "name": "אפונה מבושלת",
+    "cat": "carbs",
+    "kcal": 84,
+    "p": 5.4,
+    "c": 15,
+    "f": 0.2,
+    "unit": "כוס",
+    "g": 160,
+    "base": "מבושלת ומסוננת"
+  },
+  {
+    "id": "lentils",
+    "name": "עדשים מבושלות",
+    "cat": "carbs",
+    "kcal": 116,
+    "p": 9,
+    "c": 20,
+    "f": 0.4,
+    "unit": "כוס",
+    "g": 198,
+    "base": "מבושלות ומסוננות"
+  },
+  {
+    "id": "cashews",
+    "name": "קשיו טבעי",
+    "cat": "fat",
+    "kcal": 553,
+    "p": 18.2,
+    "c": 30.2,
+    "f": 43.9,
+    "unit": "חופן קטן",
+    "g": 15,
+    "base": "משקל משוער"
+  },
+  {
+    "id": "pecans",
+    "name": "פקאן טבעי",
+    "cat": "fat",
+    "kcal": 691,
+    "p": 9.2,
+    "c": 13.9,
+    "f": 72,
+    "unit": "חופן קטן",
+    "g": 15,
+    "base": "משקל משוער"
+  },
+  {
+    "id": "chia",
+    "name": "זרעי צ׳יה",
+    "cat": "fat",
+    "kcal": 486,
+    "p": 16.5,
+    "c": 42.1,
+    "f": 30.7,
+    "unit": "כף",
+    "g": 12,
+    "base": "משקל משוער"
+  },
+  {
+    "id": "pumpkinseeds",
+    "name": "גרעיני דלעת",
+    "cat": "fat",
+    "kcal": 559,
+    "p": 30,
+    "c": 11,
+    "f": 49,
+    "unit": "כף",
+    "g": 10,
+    "base": "ללא קליפה; משקל משוער"
+  },
+  {
+    "id": "olives",
+    "name": "זיתים",
+    "cat": "fat",
+    "kcal": 145,
+    "p": 1,
+    "c": 4,
+    "f": 15,
+    "unit": "זית",
+    "g": 4,
+    "base": "משתנה לפי סוג וגודל"
+  },
+  {
+    "id": "mango",
+    "name": "מנגו",
+    "cat": "fruit",
+    "kcal": 60,
+    "p": 0.8,
+    "c": 15,
+    "f": 0.4,
+    "unit": "כוס חתוך",
+    "g": 165,
+    "base": "חלק אכיל"
+  },
+  {
+    "id": "pineapple",
+    "name": "אננס",
+    "cat": "fruit",
+    "kcal": 50,
+    "p": 0.5,
+    "c": 13.1,
+    "f": 0.1,
+    "unit": "כוס חתוך",
+    "g": 165,
+    "base": "חלק אכיל"
+  },
+  {
+    "id": "melon",
+    "name": "מלון",
+    "cat": "fruit",
+    "kcal": 34,
+    "p": 0.8,
+    "c": 8.2,
+    "f": 0.2,
+    "unit": "כוס חתוך",
+    "g": 160,
+    "base": "חלק אכיל"
+  },
+  {
+    "id": "watermelon",
+    "name": "אבטיח",
+    "cat": "fruit",
+    "kcal": 30,
+    "p": 0.6,
+    "c": 7.6,
+    "f": 0.2,
+    "unit": "כוס חתוך",
+    "g": 150,
+    "base": "חלק אכיל"
+  },
+  {
+    "id": "pear",
+    "name": "אגס",
+    "cat": "fruit",
+    "kcal": 57,
+    "p": 0.4,
+    "c": 15.2,
+    "f": 0.1,
+    "unit": "אגס בינוני",
+    "g": 175,
+    "base": "חלק אכיל"
+  },
+  {
+    "id": "peach",
+    "name": "אפרסק",
+    "cat": "fruit",
+    "kcal": 39,
+    "p": 0.9,
+    "c": 9.5,
+    "f": 0.3,
+    "unit": "אפרסק",
+    "g": 150,
+    "base": "חלק אכיל"
+  },
+  {
+    "id": "blueberries",
+    "name": "אוכמניות",
+    "cat": "fruit",
+    "kcal": 57,
+    "p": 0.7,
+    "c": 14.5,
+    "f": 0.3,
+    "unit": "כוס",
+    "g": 148,
+    "base": "טריות"
+  },
+  {
+    "id": "dates_general",
+    "name": "תמרים (ממוצעים)",
+    "cat": "fruit",
+    "kcal": 282,
+    "p": 2.5,
+    "c": 75,
+    "f": 0.4,
+    "unit": "תמר קטן",
+    "g": 8,
+    "base": "הערך משתנה מאוד לפי זן וגודל"
+  },
+  {
+    "id": "milk3",
+    "name": "חלב 3% (דוגמה: תנובה)",
+    "cat": "protein",
+    "kcal": 60,
+    "p": 3.3,
+    "c": 4.95,
+    "f": 3,
+    "unit": "כוס חלב",
+    "g": 200,
+    "base": "ערכי ייחוס לדוגמת תנובה 3%: 60 קל, 3.3 ג׳ חלבון, 4.95 ג׳ פחמימות, 3 ג׳ שומן ל־100 ג׳. תווית האריזה גוברת."
+  },
+  {
+    "id": "whitecheese3",
+    "name": "גבינה לבנה 3% (אומדן — תווית נדרשת)",
+    "cat": "protein",
+    "kcal": 80,
+    "p": 10.5,
+    "c": 3,
+    "f": 3,
+    "unit": "כף (קירוב)",
+    "g": 20,
+    "base": "אומדן למוצר גבינה לבנה 3%; היצרן והתווית קובעים."
+  },
+  {
+    "id": "yellowcheese5",
+    "name": "גבינה צהובה 5% (אומדן — תווית נדרשת)",
+    "cat": "protein",
+    "kcal": 180,
+    "p": 32,
+    "c": 1,
+    "f": 5,
+    "unit": "פרוסה",
+    "g": 25,
+    "base": "אומדן בלבד למוצר מופחת שומן; בדוק תווית"
+  },
+  {
+    "id": "bulgarian5",
+    "name": "גבינה בולגרית 5% (אומדן — תווית נדרשת)",
+    "cat": "protein",
+    "kcal": 121,
+    "p": 18,
+    "c": 1.5,
+    "f": 5,
+    "unit": "פרוסה",
+    "g": 30,
+    "base": "אומדן למוצר מסוג בולגרית 5%; ערכים לפי מותג"
+  },
+  {
+    "id": "bulgarian9",
+    "name": "גבינה בולגרית 9% (אומדן)",
+    "cat": "protein",
+    "kcal": 160,
+    "p": 16,
+    "c": 2,
+    "f": 9,
+    "unit": "פרוסה",
+    "g": 30,
+    "base": "אומדן בלבד — בדוק תווית"
+  },
+  {
+    "id": "safed5",
+    "name": "גבינה צפתית 5% (אומדן — תווית נדרשת)",
+    "cat": "protein",
+    "kcal": 135,
+    "p": 17,
+    "c": 2,
+    "f": 5,
+    "unit": "פרוסה",
+    "g": 30,
+    "base": "אומדן בלבד — סוגי גבינה צפתית משתנים לפי יצרן"
+  },
+  {
+    "id": "symfonia5",
+    "name": "גבינת שמנת סימפוניה 5% בטעמים (אומדן)",
+    "cat": "protein",
+    "kcal": 109,
+    "p": 10,
+    "c": 5,
+    "f": 5,
+    "unit": "כף גבינה",
+    "g": 20,
+    "base": "ערך ייחוס למוצר סימפוניה 5% בטעם שום־שמיר. טעם ומוצר שונים עשויים להשתנות; בדוק את התווית שלך."
+  },
+  {
+    "id": "chickenliver",
+    "name": "כבד עוף מבושל (ערך ייחוס)",
+    "cat": "protein",
+    "kcal": 167,
+    "p": 24.5,
+    "c": 0.9,
+    "f": 6.5,
+    "unit": "מנת כבד מבושל",
+    "g": 100,
+    "base": "ערך ייחוס לכבד עוף מבושל; משקל לאחר הכנה ואופן הבישול משפיעים."
+  },
+  {
+    "id": "chickendrumstick",
+    "name": "שוק עוף מבושלת ללא עור (חלק אכיל)",
+    "cat": "protein",
+    "kcal": 175,
+    "p": 28.3,
+    "c": 0,
+    "f": 5.7,
+    "unit": "שוק בינונית",
+    "g": 75,
+    "base": "ערך ייחוס לבשר מבושל ללא עור; כמות הבשר האכיל בשוק משתנה"
+  },
+  {
+    "id": "turkeyshawarma",
+    "name": "שווארמה הודו (אומדן)",
+    "cat": "protein",
+    "kcal": 170,
+    "p": 27,
+    "c": 1,
+    "f": 6.5,
+    "unit": "מנה",
+    "g": 100,
+    "base": "אומדן בלבד — נתח, תיבול ושמן משנים ערכים משמעותית"
+  },
+  {
+    "id": "cod",
+    "name": "בקלה מבושלת",
+    "cat": "protein",
+    "kcal": 89,
+    "p": 19.9,
+    "c": 0,
+    "f": 0.7,
+    "unit": "מנת בקלה",
+    "g": 150,
+    "base": "נתון ייחוס לדג בקלה מבושל; ללא תוספת שמן"
+  },
+  {
+    "id": "halibut",
+    "name": "הליבוט מבושל (אומדן)",
+    "cat": "protein",
+    "kcal": 111,
+    "p": 22.5,
+    "c": 0,
+    "f": 1.6,
+    "unit": "מנת הליבוט",
+    "g": 150,
+    "base": "אומדן ייחוס לדג רזה; שיטת הכנה משנה ערכים"
+  },
+  {
+    "id": "nileperch",
+    "name": "נסיכת הנילוס מבושלת (אומדן)",
+    "cat": "protein",
+    "kcal": 96,
+    "p": 20.1,
+    "c": 0,
+    "f": 1.7,
+    "unit": "מנת דג",
+    "g": 150,
+    "base": "אומדן כללי לדג רזה; לבדוק לפי המוצר והכנה"
+  },
+  {
+    "id": "seabass",
+    "name": "לברק מבושל (אומדן)",
+    "cat": "protein",
+    "kcal": 124,
+    "p": 23,
+    "c": 0,
+    "f": 3,
+    "unit": "מנת לברק",
+    "g": 150,
+    "base": "אומדן בלבד — סוג הדג ושיטת ההכנה משנים ערכים"
+  },
+  {
+    "id": "seabream",
+    "name": "דניס מבושל (אומדן)",
+    "cat": "protein",
+    "kcal": 128,
+    "p": 20,
+    "c": 0,
+    "f": 4.8,
+    "unit": "מנת דניס",
+    "g": 150,
+    "base": "אומדן בלבד — סוג הדג ושיטת ההכנה משנים ערכים"
+  },
+  {
+    "id": "protein_powder",
+    "name": "אבקת חלבון (אומדן)",
+    "cat": "protein",
+    "kcal": 400,
+    "p": 80,
+    "c": 8,
+    "f": 6,
+    "unit": "סקופ",
+    "g": 30,
+    "base": "אומדן כללי בלבד; ערכי אבקה ומשקל הסקופ לפי האריזה"
+  },
+  {
+    "id": "brownrice",
+    "name": "אורז מלא מבושל",
+    "cat": "carbs",
+    "kcal": 123,
+    "p": 2.7,
+    "c": 25.6,
+    "f": 1,
+    "unit": "כוס אורז מלא",
+    "g": 195,
+    "base": "נתון ייחוס לאורז מלא מבושל; משקל כוס משתנה"
+  },
+  {
+    "id": "buckwheat",
+    "name": "כוסמת מבושלת",
+    "cat": "carbs",
+    "kcal": 92,
+    "p": 3.4,
+    "c": 19.9,
+    "f": 0.6,
+    "unit": "כוס כוסמת",
+    "g": 168,
+    "base": "נתון ייחוס לכוסמת מבושלת"
+  },
+  {
+    "id": "puffedrice",
+    "name": "פצפוצי אורז B&D (אומדן — תווית נדרשת)",
+    "cat": "carbs",
+    "kcal": 383,
+    "p": 6.5,
+    "c": 86,
+    "f": 0.5,
+    "unit": "כוס",
+    "g": 15,
+    "base": "אומדן בלבד לפצפוצי אורז; לא אומת מול תווית B&D הספציפית. יש לעדכן לפי האריזה."
+  },
+  {
+    "id": "branflakes",
+    "name": "ברנפלקס (אומדן)",
+    "cat": "carbs",
+    "kcal": 320,
+    "p": 10,
+    "c": 65,
+    "f": 3,
+    "unit": "כוס",
+    "g": 30,
+    "base": "אומדן לדגני סובין; מותג ומתכון משנים ערכים"
+  },
+  {
+    "id": "granola",
+    "name": "גרנולה עד 420 קל ל־100 גרם (אומדן)",
+    "cat": "carbs",
+    "kcal": 420,
+    "p": 10,
+    "c": 65,
+    "f": 13,
+    "unit": "כוס",
+    "g": 45,
+    "base": "ערך תקרה לפי כלל הטבלה שלך; בדוק שעל המוצר אכן עד 420 קל ל־100 גרם"
+  },
+  {
+    "id": "ricepaper",
+    "name": "דף אורז יבש (אומדן)",
+    "cat": "carbs",
+    "kcal": 360,
+    "p": 5,
+    "c": 80,
+    "f": 1.5,
+    "unit": "דף אורז",
+    "g": 8,
+    "base": "אומדן כללי; משקל וערכים שונים בין מותגים"
+  },
+  {
+    "id": "tortilla",
+    "name": "טורטייה עד 320 קל ל־100 גרם (אומדן)",
+    "cat": "carbs",
+    "kcal": 310,
+    "p": 8,
+    "c": 51,
+    "f": 7.5,
+    "unit": "טורטייה",
+    "g": 50,
+    "base": "בחר מוצר לפי כלל הטבלה שלך: עד 320 קל ל־100 גרם; הערכים בפועל לפי תווית"
+  },
+  {
+    "id": "almondbutter",
+    "name": "חמאת שקדים טבעית (אומדן)",
+    "cat": "fat",
+    "kcal": 614,
+    "p": 21,
+    "c": 19,
+    "f": 56,
+    "unit": "כף",
+    "g": 16,
+    "base": "אומדן כללי לממרח שקדים טבעי; בדוק תווית"
+  },
+  {
+    "id": "flaxseed",
+    "name": "זרעי פשתן",
+    "cat": "fat",
+    "kcal": 534,
+    "p": 18.3,
+    "c": 28.9,
+    "f": 42.2,
+    "unit": "כף זרעי פשתן",
+    "g": 10,
+    "base": "ערך ייחוס כללי לזרעי פשתן"
+  },
+  {
+    "id": "sunflowerseeds",
+    "name": "גרעיני חמנייה ללא קליפה",
+    "cat": "fat",
+    "kcal": 584,
+    "p": 20.8,
+    "c": 20,
+    "f": 51.5,
+    "unit": "כף גרעינים",
+    "g": 10,
+    "base": "ערך ייחוס כללי; משקל כף משוער"
+  },
+  {
+    "id": "butter",
+    "name": "חמאה — מריחה דקה",
+    "cat": "fat",
+    "kcal": 717,
+    "p": 0.9,
+    "c": 0.1,
+    "f": 81,
+    "unit": "מריחה דקה",
+    "g": 5,
+    "base": "ערך ייחוס לחמאה רגילה; הכמות למריחה משוערת"
+  },
+  {
+    "id": "persimmon",
+    "name": "אפרסמון",
+    "cat": "fruit",
+    "kcal": 70,
+    "p": 0.6,
+    "c": 18.6,
+    "f": 0.2,
+    "unit": "אפרסמון בינוני",
+    "g": 170,
+    "base": "חלק אכיל; גודל הפרי משתנה"
+  },
+  {
+    "id": "grapefruit",
+    "name": "אשכולית",
+    "cat": "fruit",
+    "kcal": 42,
+    "p": 0.8,
+    "c": 10.7,
+    "f": 0.1,
+    "unit": "חצי אשכולית",
+    "g": 120,
+    "base": "חלק אכיל; זן וגודל משתנים"
+  },
+  {
+    "id": "cherries",
+    "name": "דובדבנים",
+    "cat": "fruit",
+    "kcal": 63,
+    "p": 1.1,
+    "c": 16,
+    "f": 0.2,
+    "unit": "כוס דובדבנים",
+    "g": 150,
+    "base": "ללא גלעינים, משקל משוער"
+  },
+  {
+    "id": "clementine",
+    "name": "קלמנטינה",
+    "cat": "fruit",
+    "kcal": 47,
+    "p": 0.9,
+    "c": 12,
+    "f": 0.2,
+    "unit": "קלמנטינה",
+    "g": 75,
+    "base": "חלק אכיל; גודל משתנה"
+  },
+  {
+    "id": "apricot",
+    "name": "משמש",
+    "cat": "fruit",
+    "kcal": 48,
+    "p": 1.4,
+    "c": 11.1,
+    "f": 0.4,
+    "unit": "משמש",
+    "g": 35,
+    "base": "טרי, חלק אכיל"
+  },
+  {
+    "id": "lychee",
+    "name": "ליצ׳י",
+    "cat": "fruit",
+    "kcal": 66,
+    "p": 0.8,
+    "c": 16.5,
+    "f": 0.4,
+    "unit": "ליצ׳י קלוף",
+    "g": 10,
+    "base": "חלק אכיל; גודל משתנה"
+  },
+  {
+    "id": "plum",
+    "name": "שזיף",
+    "cat": "fruit",
+    "kcal": 46,
+    "p": 0.7,
+    "c": 11.4,
+    "f": 0.3,
+    "unit": "שזיף בינוני",
+    "g": 66,
+    "base": "חלק אכיל; גודל משתנה"
+  },
+  {
+    "id": "passionfruit",
+    "name": "פסיפלורה",
+    "cat": "fruit",
+    "kcal": 97,
+    "p": 2.2,
+    "c": 23.4,
+    "f": 0.7,
+    "unit": "פסיפלורה",
+    "g": 18,
+    "base": "תכולה אכילה; ערכים משתנים"
+  },
+  {
+    "id": "yoplait_go_zero",
+    "name": "יופלה GO 0% — 20 ג׳ חלבון (דוגמת תות)",
+    "cat": "protein",
+    "kcal": 54,
+    "p": 10,
+    "c": 3.4,
+    "f": 0,
+    "unit": "גביע",
+    "g": 200,
+    "base": "ערך תווית שפורסם למוצר GO תות 0% עם 20 ג׳ חלבון. טעמים/נוסחאות משתנים; האריזה שלך קובעת."
+  },
+  {
+    "id": "muller_active",
+    "name": "מולר אקטיב 0% — 25 ג׳ חלבון (טבעי)",
+    "cat": "protein",
+    "kcal": 65,
+    "p": 12.5,
+    "c": 2.5,
+    "f": 0,
+    "unit": "גביע",
+    "g": 200,
+    "base": "ערך שפורסם למוצר מולר אקטיב טבעי 0%: 65 קל, 12.5 ג׳ חלבון, 2.5 ג׳ פחמימות ו־0 ג׳ שומן ל־100 ג׳. טעמים אחרים שונים."
+  },
+  {
+    "id": "danone_lightfruit",
+    "name": "דנונה לייט אנד פרוט (אומדן בלבד)",
+    "cat": "protein",
+    "kcal": 60,
+    "p": 4.5,
+    "c": 8,
+    "f": 1.5,
+    "unit": "גביע",
+    "g": 200,
+    "base": "אומדן לא ממותג שנועד לאכלס אפשרות מהטבלה; אין להשתמש לערך מדויק. החלף לפי התווית של דנונה לייט אנד פרוט והטעם שלך."
+  },
+  {
+    "id": "yoplait_golite",
+    "name": "יופלה GO לייט (אומדן בלבד)",
+    "cat": "protein",
+    "kcal": 60,
+    "p": 5,
+    "c": 7,
+    "f": 1.5,
+    "unit": "גביע",
+    "g": 200,
+    "base": "אומדן בלבד למוצר GO לייט; טעמים ומוצרים שונים מאוד. השתמש בערכי האריזה לפני שמחשבים במדויק."
+  },
+  {
+    "id": "symfonia_garlic",
+    "name": "גבינת שמנת סימפוניה 5% שום־שמיר (דוגמה)",
+    "cat": "protein",
+    "kcal": 109,
+    "p": 10,
+    "c": 5,
+    "f": 5,
+    "unit": "כף גבינה",
+    "g": 20,
+    "base": "ערך ייחוס למוצר סימפוניה 5% שום־שמיר; בדוק תווית."
+  },
+  {
+    "id": "symfonia_plain",
+    "name": "גבינת שמנת סימפוניה 5% טבעית (אומדן)",
+    "cat": "protein",
+    "kcal": 109,
+    "p": 10,
+    "c": 5,
+    "f": 5,
+    "unit": "כף גבינה",
+    "g": 20,
+    "base": "אומדן לפי מוצר סימפוניה 5%; מוצר טבעי/טעם אחר עשוי להיות שונה. בדוק תווית."
+  },
+  {
+    "id": "symfonia_olives",
+    "name": "גבינת שמנת סימפוניה 5% זיתים (אומדן)",
+    "cat": "protein",
+    "kcal": 109,
+    "p": 10,
+    "c": 5,
+    "f": 5,
+    "unit": "כף גבינה",
+    "g": 20,
+    "base": "אומדן לפי מוצר סימפוניה 5%; טעם זיתים עשוי לשנות ערכים. בדוק תווית."
+  },
+  {
+    "id": "beef_sheitel",
+    "name": "בשר בקר שייטל מבושל (אומדן ייחוס)",
+    "cat": "protein",
+    "kcal": 183,
+    "p": 30.6,
+    "c": 0,
+    "f": 5.8,
+    "unit": "מנה בקר",
+    "g": 120,
+    "base": "ערך ייחוס לנתח דומה של סינטה רזה מבושלת; אינו אימות ייעודי לנתח שייטל בישראל."
+  },
+  {
+    "id": "beef_sirloin",
+    "name": "בשר בקר סינטה מבושל (אומדן ייחוס)",
+    "cat": "protein",
+    "kcal": 219,
+    "p": 29,
+    "c": 0,
+    "f": 10.5,
+    "unit": "מנה בקר",
+    "g": 120,
+    "base": "ערך ייחוס לנתח סינטה מבושל כולל שומן; נתח, הורדת שומן והכנה משנים ערכים."
+  },
+  {
+    "id": "beef_filet",
+    "name": "פילה בקר מבושל (אומדן)",
+    "cat": "protein",
+    "kcal": 200,
+    "p": 29,
+    "c": 0,
+    "f": 8,
+    "unit": "מנה בקר",
+    "g": 120,
+    "base": "אומדן כללי; תלוי בניקוי הנתח, דרגת עשייה ושמן בבישול."
+  },
+  {
+    "id": "beef_weisbraten",
+    "name": "ויסבראטן / נתח בקר רזה (אומדן)",
+    "cat": "protein",
+    "kcal": 190,
+    "p": 29,
+    "c": 0,
+    "f": 7,
+    "unit": "מנה בקר",
+    "g": 120,
+    "base": "אומדן לפי נתח בקר רזה מבושל; ערכים לא אומתו לנתח המקומי המדויק."
+  },
+  {
+    "id": "beef_liver",
+    "name": "כבד בקר מבושל (אומדן)",
+    "cat": "protein",
+    "kcal": 191,
+    "p": 29,
+    "c": 5,
+    "f": 5,
+    "unit": "מנת כבד",
+    "g": 100,
+    "base": "ערך ייחוס כללי לכבד בקר מבושל; אופן הכנה ונתח משפיעים."
+  },
+  {
+    "id": "chicken_quarter",
+    "name": "כרע עוף מבושלת ללא עור (בשר אכיל, אומדן)",
+    "cat": "protein",
+    "kcal": 180,
+    "p": 25,
+    "c": 0,
+    "f": 8,
+    "unit": "מנת כרע",
+    "g": 120,
+    "base": "אומדן לנתח עוף כהה מבושל ללא עור; משקל החלק האכיל משתנה מאוד."
+  },
+  {
+    "id": "speltcake",
+    "name": "פריכית כוסמין (אומדן)",
+    "cat": "carbs",
+    "kcal": 400,
+    "p": 12,
+    "c": 75,
+    "f": 3,
+    "unit": "פריכית כוסמין",
+    "g": 7,
+    "base": "אומדן ליחידת פריכית במשקל כ־7 ג׳ (כ־28 קל); מוצר שונה עשוי להשתנות. בדוק תווית."
+  },
+  {
+    "id": "lahmit",
+    "name": "לחמית קטנה (כ־26–32 קל ליחידה; אומדן)",
+    "cat": "carbs",
+    "kcal": 430,
+    "p": 10,
+    "c": 70,
+    "f": 12,
+    "unit": "לחמית",
+    "g": 7,
+    "base": "הטבלה שלך מציינת כ־26–32 קל ליחידה. 7 ג׳ הוא קירוב; השתמש בתווית האריזה."
+  },
+  {
+    "id": "wheatcooked",
+    "name": "חיטה מבושלת",
+    "cat": "carbs",
+    "kcal": 111,
+    "p": 3.5,
+    "c": 23.2,
+    "f": 0.8,
+    "unit": "כוס חיטה מבושלת",
+    "g": 180,
+    "base": "ערך ייחוס כללי לחיטה מבושלת; תלוי בזן, מים והכנה."
+  },
+  {
+    "id": "sweetpotato_boiled",
+    "name": "בטטה מבושלת ללא תוספת שמן",
+    "cat": "carbs",
+    "kcal": 76,
+    "p": 1.4,
+    "c": 17.7,
+    "f": 0.1,
+    "unit": "בטטה בינונית",
+    "g": 150,
+    "base": "ערך ייחוס למאה גרם בטטה מבושלת. משקל החלק האכיל משתנה."
+  },
+  {
+    "id": "potato_baked",
+    "name": "תפוח אדמה אפוי ללא שמן",
+    "cat": "carbs",
+    "kcal": 95,
+    "p": 2.6,
+    "c": 21.4,
+    "f": 0.1,
+    "unit": "תפוח אדמה בינוני אפוי",
+    "g": 200,
+    "base": "ערך ייחוס לתפוח אדמה אפוי; משקל תלוי בזן ובגודל, ללא תוספות."
+  },
+  {
+    "id": "cashewbutter",
+    "name": "חמאת קשיו טבעית (דוגמה: שקד תבור)",
+    "cat": "fat",
+    "kcal": 550,
+    "p": 18,
+    "c": 30.9,
+    "f": 43.9,
+    "unit": "כף",
+    "g": 16,
+    "base": "ערך תווית שפורסם לחמאת קשיו 100% של שקד תבור: 550 קל, 18 ג׳ חלבון, 30.9 ג׳ פחמימות, 43.9 ג׳ שומן ל־100 ג׳. אריזתך קובעת."
+  },
+  {
+    "id": "darkchocolate70",
+    "name": "שוקולד מריר 70% (אומדן כללי)",
+    "cat": "fat",
+    "kcal": 579,
+    "p": 7,
+    "c": 36,
+    "f": 42,
+    "unit": "קובייה",
+    "g": 10,
+    "base": "ערך ייחוס לשוקולד מריר 70%; מוצרי 70% שונים. בדוק תווית."
+  },
+  {
+    "id": "cream9",
+    "name": "שמנת חמוצה תנובה 9%",
+    "cat": "fat",
+    "kcal": 114,
+    "p": 3.5,
+    "c": 4.7,
+    "f": 9,
+    "unit": "כף",
+    "g": 15,
+    "base": "ערך רשמי שפורסם לתנובה שמנת חמוצה 9%: 114 קל, 3.5 ג׳ חלבון, 4.7 ג׳ פחמימות ו־9 ג׳ שומן ל־100 ג׳."
+  },
+  {
+    "id": "shkedia_tahini",
+    "name": "טחינה גולמית שקדיה (ערך ייחוס)",
+    "cat": "fat",
+    "kcal": 595,
+    "p": 17,
+    "c": 21,
+    "f": 54,
+    "unit": "כף",
+    "g": 15,
+    "base": "ערך ייחוס לטחינה גולמית 100% שומשום; בדוק את תווית מותג שקדיה שלך."
+  },
+  {
+    "id": "cucumber",
+    "name": "מלפפון טרי",
+    "cat": "other",
+    "kcal": 15,
+    "p": 0.7,
+    "c": 3.6,
+    "f": 0.1,
+    "unit": "מלפפון בינוני",
+    "g": 100,
+    "base": "ערך ייחוס למלפפון טרי; משקל יחידה משתנה."
+  },
+  {
+    "id": "tomato",
+    "name": "עגבנייה טרייה",
+    "cat": "other",
+    "kcal": 18,
+    "p": 0.9,
+    "c": 3.9,
+    "f": 0.2,
+    "unit": "עגבנייה בינונית",
+    "g": 100,
+    "base": "ערך ייחוס לעגבנייה טרייה; משקל יחידה משתנה."
+  },
+  {
+    "id": "lettuce",
+    "name": "חסה טרייה",
+    "cat": "other",
+    "kcal": 15,
+    "p": 1.4,
+    "c": 2.9,
+    "f": 0.2,
+    "unit": "כוס חסה קצוצה",
+    "g": 36,
+    "base": "ערך ייחוס לחסה טרייה; תלוי בזן ובדחיסה בכוס."
+  },
+  {
+    "id": "pro_coffee0",
+    "name": "יטבתה PRO קפה 0% שומן (בקבוק 350 מ״ל)",
+    "cat": "protein",
+    "kcal": 37,
+    "p": 7.2,
+    "c": 2.1,
+    "f": 0,
+    "unit": "בקבוק (350 מ״ל)",
+    "g": 350,
+    "base": "ערכי ייחוס שפורסמו למוצר PRO קפה 0%: ל־100 מ״ל 37 קל, 7.2 ג׳ חלבון, 2.1 ג׳ פחמימות ו־0 ג׳ שומן; כ־130 קל ו־25.2 ג׳ חלבון בבקבוק 350 מ״ל. החישוב באפליקציה מתייחס ל־1 מ״ל ≈ 1 ג׳. בדוק את התווית שלך."
+  },
+  {
+    "id": "pro_hazelnut0",
+    "name": "יטבתה PRO שוקולד־אגוזים 0% שומן (בקבוק 350 מ״ל)",
+    "cat": "protein",
+    "kcal": 40,
+    "p": 7.2,
+    "c": 2.1,
+    "f": 0,
+    "unit": "בקבוק (350 מ״ל)",
+    "g": 350,
+    "base": "ערכי ייחוס שפורסמו למוצר PRO שוקולד־אגוזים 0%: ל־100 מ״ל 40 קל, 7.2 ג׳ חלבון, 2.1 ג׳ פחמימות ו־0 ג׳ שומן; כ־140 קל ו־25.2 ג׳ חלבון בבקבוק 350 מ״ל. החישוב באפליקציה מתייחס ל־1 מ״ל ≈ 1 ג׳. בדוק את התווית שלך."
+  }
+]
 // תפריט בסיסי לדוגמה. כל הפריטים מתחילים כ"מתוכננים" ולא נספרים כ"נאכלו" עד שהמשתמש מסמן אותם.
 const starterMeals={
- breakfast:[{foodId:'bread',grams:110,eaten:false},{foodId:'egg',grams:100,eaten:false},{foodId:'cottage3',grams:100,eaten:false},{foodId:'apple',grams:200,eaten:false}],
- lunch:[{foodId:'chicken',grams:80,eaten:false},{foodId:'rice',grams:415,eaten:false},{foodId:'oliveoil',grams:15,eaten:false}],
- snack:[{foodId:'protein_yogurt',grams:200,eaten:false},{foodId:'ricecake',grams:39,eaten:false},{foodId:'almonds',grams:15,eaten:false}],
- dinner:[{foodId:'tuna',grams:100,eaten:false},{foodId:'pita',grams:105,eaten:false},{foodId:'potato',grams:210,eaten:false},{foodId:'tahini',grams:15,eaten:false},{foodId:'oliveoil',grams:10,eaten:false}]
+ breakfast:[{foodId:'cornflakes',grams:80,eaten:false},{foodId:'milk3',grams:250,eaten:false},{foodId:'pro_coffee0',grams:350,eaten:false},{foodId:'banana',grams:120,eaten:false}],
+ lunch:[{foodId:'chicken',grams:100,eaten:false},{foodId:'rice',grams:280,eaten:false},{foodId:'oliveoil',grams:15,eaten:false},{foodId:'cucumber',grams:100,eaten:false},{foodId:'tomato',grams:100,eaten:false},{foodId:'lettuce',grams:36,eaten:false}],
+ snack:[{foodId:'bread',grams:120,eaten:false},{foodId:'symfonia5',grams:40,eaten:false},{foodId:'almonds',grams:23,eaten:false},{foodId:'cucumber',grams:100,eaten:false},{foodId:'lettuce',grams:36,eaten:false}],
+ dinner:[{foodId:'tuna',grams:112,eaten:false},{foodId:'pita',grams:120,eaten:false},{foodId:'tahini',grams:15,eaten:false},{foodId:'oliveoil',grams:10,eaten:false},{foodId:'cucumber',grams:100,eaten:false},{foodId:'tomato',grams:100,eaten:false},{foodId:'lettuce',grams:36,eaten:false}]
 };
-const initialState={version:1,appUiVersion:6,goals:{kcal:2517,p:135,c:337,f:70},foodDb:seedFoods,days:{},measurements:[{id:'baseline_20261012',date:'2026-10-12',weight:64.4,waist:75,neck:37,chest:85,arm:31,thigh:47,notes:'מדידת בוקר בסיסית; זרוע רפויה 27 ס״מ; גובה 170 ס״מ'}]};
+const initialState={version:1,appUiVersion:10,goals:{kcal:2517,p:135,c:337,f:70},waterGoalMl:2000,foodDb:seedFoods,days:{},measurements:[{id:'baseline_20261012',date:'2026-10-12',weight:64.4,waist:75,neck:37,chest:85,arm:31,thigh:47,notes:'מדידת בוקר בסיסית; זרוע רפויה 27 ס״מ; גובה 170 ס״מ'}]};
 let state=loadState();let activeCategory='all';let modalFood=null;let quantityMode='grams';let expandedMeals={breakfast:true,lunch:false,snack:false,dinner:false};
-function makeStarterDay(){return Object.fromEntries(Object.keys(mealNames).map(m=>[m,(starterMeals[m]||[]).map(it=>({...it}))]));}
+function makeStarterDay(){return {...Object.fromEntries(Object.keys(mealNames).map(m=>[m,(starterMeals[m]||[]).map(it=>({...it}))])),waterMl:0};}
+
+const priorStarterSignatures=[
+ {
+  breakfast:[['bread',105],['egg',100],['cottage3',80],['apple',180]],
+  lunch:[['chicken',120],['rice',300],['oliveoil',15],['cucumber',100],['tomato',100]],
+  snack:[['yoplait_go_zero',200],['ricecake',40],['almonds',15],['banana',120]],
+  dinner:[['tuna',80],['pita',90],['potato',250],['tahini',20],['oliveoil',8],['cucumber',100],['tomato',100]]
+ },
+ {
+  breakfast:[['bread',110],['egg',100],['cottage3',100],['apple',200]],
+  lunch:[['chicken',80],['rice',415],['oliveoil',15]],
+  snack:[['protein_yogurt',200],['ricecake',39],['almonds',15]],
+  dinner:[['tuna',100],['pita',105],['potato',210],['tahini',15],['oliveoil',10]]
+ }
+];
+function matchesOldStarter(items,signature){
+ if(!Array.isArray(items)||items.length!==signature.length)return false;
+ return signature.every(([id,g],i)=>{const it=items[i];return it&&it.foodId===id&&Math.abs(Number(it.grams)-g)<0.05&&it.eaten!==true&&(!Number.isFinite(Number(it.actualGrams))||Math.abs(Number(it.actualGrams)-Number(it.grams))<0.05)});
+}
+function migrateUnmodifiedStarterPlans(days){
+ for(const day of Object.values(days||{})){
+  if(!day||typeof day!=='object')continue;
+  for(const m of Object.keys(mealNames)){
+   const signature=priorStarterSignatures.map(set=>set[m]).find(sig=>sig&&matchesOldStarter(day[m],sig));
+   if(signature)day[m]=(starterMeals[m]||[]).map(it=>({...it}));
+  }
+  if(!Number.isFinite(Number(day.waterMl)))day.waterMl=0;
+ }
+ return days;
+}
+
 function loadState(){
  try{
   const parsed=JSON.parse(localStorage.getItem('masseCleanAppV1'));
@@ -474,30 +2043,76 @@ function loadState(){
    }
    const goals={...initialState.goals,...parsed.goals};
    if(needsV6){goals.kcal=2517;if(goals.p===135&&goals.c===315&&goals.f===70)goals.c=337;}
-   return {...initialState,...parsed,appUiVersion:6,goals,foodDb:[...seedFoods,...personal],days,measurements:parsed.measurements&&parsed.measurements.length?parsed.measurements:initialState.measurements};
+   migrateUnmodifiedStarterPlans(days);
+   return {...initialState,...parsed,appUiVersion:10,waterGoalMl:[1500,2000,2500,3000,3500].includes(Number(parsed.waterGoalMl))?Number(parsed.waterGoalMl):2000,goals,foodDb:[...seedFoods,...personal],days,measurements:parsed.measurements&&parsed.measurements.length?parsed.measurements:initialState.measurements};
   }
  }catch(e){}
  return structuredClone(initialState)
 }
 function saveState(){try{localStorage.setItem('masseCleanAppV1',JSON.stringify(state));$('savedLabel').textContent='נשמר במכשיר שלך';}catch(e){$('savedLabel').textContent='לא הצלחנו לשמור — ייצא גיבוי';}}
 const todayKey=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
-function currentDay(){const k=todayKey();if(!state.days[k])state.days[k]=makeStarterDay();for(const m of Object.keys(mealNames))if(!Array.isArray(state.days[k][m]))state.days[k][m]=[];if(!state.days[k]._userCleared&&Object.keys(mealNames).every(m=>state.days[k][m].length===0))state.days[k]=makeStarterDay();return state.days[k]}
+function currentDay(){const k=todayKey();if(!state.days[k])state.days[k]=makeStarterDay();for(const m of Object.keys(mealNames))if(!Array.isArray(state.days[k][m]))state.days[k][m]=[];if(!state.days[k]._userCleared&&Object.keys(mealNames).every(m=>state.days[k][m].length===0))state.days[k]=makeStarterDay();if(!Number.isFinite(Number(state.days[k].waterMl)))state.days[k].waterMl=0;return state.days[k]}
 function n(v){const x=Number(v);return Number.isFinite(x)?x:0}function fmt(v,d=0){return n(v).toLocaleString('he-IL',{maximumFractionDigits:d,minimumFractionDigits:0})}function fixed(v,d=1){return (Math.round(n(v)*10**d)/10**d).toLocaleString('he-IL',{maximumFractionDigits:d,minimumFractionDigits:0})}
-const unitPlurals={'כף':'כפות','כף (קירוב)':'כפות','כף גבינה':'כפות גבינה','פרוסה':'פרוסות','פרוסה דקה':'פרוסות דקות','פריכית גדולה':'פריכיות','ביצה בינונית':'ביצים בינוניות','כוס':'כוסות','כוס מבושלת':'כוסות מבושלות','כוס חתוכה':'כוסות חתוכות','כוס דובדבנים':'כוסות דובדבנים','שקד בינוני':'שקדים','זית':'זיתים','פיתה':'פיתות','טורטייה':'טורטיות','תמר בינוני':'תמרים בינוניים','תמר קטן':'תמרים קטנים','תפוח בינוני':'תפוחים בינוניים','בננה בינונית':'בננות בינוניות','אפרסמון בינוני':'אפרסמונים בינוניים','קלמנטינה':'קלמנטינות','קיווי':'קיווים','אפרסק':'אפרסקים','משמש':'משמשים','שזיף בינוני':'שזיפים בינוניים','ליצ׳י קלוף':'ליצ׳ים קלופים','פסיפלורה':'פסיפלורות','מנה':'מנות','מנה מבושלת':'מנות מבושלות','מנת הודו מבושלת':'מנות הודו מבושלות','מנת דג מבושל':'מנות דג מבושל','מנת בקלה':'מנות בקלה','מנת לברק':'מנות לברק','מנת הליבוט':'מנות הליבוט','מנת דג':'מנות דג','מנת כבד מבושל':'מנות כבד מבושל','מנה מבושלת (100 גרם)':'מנות מבושלות (100 גרם)','גביע (200 גרם)':'גביעים (200 גרם)','בקבוק (250 מ״ל)':'בקבוקים (250 מ״ל)','סקופ':'סקופים','כוס אורז מלא':'כוסות אורז מלא','כוס כוסמת':'כוסות כוסמת','דף אורז':'דפי אורז','קרקר קטן':'קרקרים קטנים','חופן קטן':'חופנים קטנים','מנת דג':'מנות דג','בשר אכיל משוק בינונית (אומדן)':'מנות בשר אכיל משוק בינונית','מריחה דקה':'מריחות דקות'};
-function unitQuantityText(food,grams){const units=n(grams)/Math.max(.1,n(food.g));const rounded=Math.round(units*10)/10;const one=Math.abs(rounded-1)<.001;const unit=one?food.unit:(unitPlurals[food.unit]||food.unit);return `${fixed(rounded,1)} ${unit}`;}
-function quantitySummary(food,grams){return `<strong>${esc(unitQuantityText(food,grams))}</strong><small>(${fmt(grams,1)} ג׳)</small>`;}
-
-function calcFood(food,grams){const k=n(grams)/100;return {kcal:food.kcal*k,p:food.p*k,c:food.c*k,f:food.f*k}}
+const unitPlurals={'כף':'כפות','כף (קירוב)':'כפות','כף בינונית':'כפות בינוניות','כף גבינה':'כפות גבינה','פרוסה':'פרוסות','פרוסה דקה':'פרוסות דקות','פריכית גדולה':'פריכיות','ביצה בינונית':'ביצים בינוניות','כוס':'כוסות','כוס מבושלת':'כוסות מבושלות','כוס חתוכה':'כוסות חתוכות','כוס דובדבנים':'כוסות דובדבנים','שקד בינוני':'שקדים','זית':'זיתים','פיתה':'פיתות','טורטייה':'טורטיות','תמר בינוני':'תמרים בינוניים','תמר קטן':'תמרים קטנים','תפוח בינוני':'תפוחים בינוניים','בננה בינונית':'בננות בינוניות','אפרסמון בינוני':'אפרסמונים בינוניים','קלמנטינה':'קלמנטינות','קיווי':'קיווים','אפרסק':'אפרסקים','משמש':'משמשים','שזיף בינוני':'שזיפים בינוניים','ליצ׳י קלוף':'ליצ׳ים קלופים','פסיפלורה':'פסיפלורות','מנה':'מנות','מנה מבושלת':'מנות מבושלות','מנת הודו מבושלת':'מנות הודו מבושלות','מנת דג מבושל':'מנות דג מבושל','מנת בקלה':'מנות בקלה','מנת לברק':'מנות לברק','מנת הליבוט':'מנות הליבוט','מנת דג':'מנות דג','מנת כבד מבושל':'מנות כבד מבושל','מנה מבושלת (100 גרם)':'מנות מבושלות (100 גרם)','גביע (200 גרם)':'גביעים (200 גרם)','בקבוק (250 מ״ל)':'בקבוקים (250 מ״ל)','סקופ':'סקופים','כוס אורז מלא':'כוסות אורז מלא','כוס כוסמת':'כוסות כוסמת','דף אורז':'דפי אורז','קרקר קטן':'קרקרים קטנים','חופן קטן':'חופנים קטנים','מנת דג':'מנות דג','בשר אכיל משוק בינונית (אומדן)':'מנות בשר אכיל משוק בינונית','מריחה דקה':'מריחות דקות','מנה דגנים (30 ג׳)':'מנות דגנים (30 ג׳)','בקבוק (350 מ״ל)':'בקבוקים (350 מ״ל)'};
+Object.assign(unitPlurals,{'כוס אורז מבושל':'כוסות אורז מבושל','כוס חיטה מבושלת':'כוסות חיטה מבושלת','כוס אורז מלא':'כוסות אורז מלא','כוס כוסמת':'כוסות כוסמת','מנה עוף':'מנות עוף','מנה הודו':'מנות הודו','מנה פרגית':'מנות פרגיות','מנה בקר':'מנות בקר','מנה כבד':'מנות כבד','מנה כרע':'מנות כרע','שקד':'שקדים','פריכית':'פריכיות','פריכית כוסמין':'פריכיות כוסמין','כפית':'כפיות','כוס חסה קצוצה':'כוסות חסה קצוצה','מלפפון בינוני':'מלפפונים בינוניים','עגבנייה בינונית':'עגבניות בינוניות','תפוח אדמה בינוני אפוי':'תפוחי אדמה בינוניים אפויים'});
+function niceQty(v){const x=Math.max(0,Math.round(n(v)*4)/4);const whole=Math.floor(x+1e-8),frac=x-whole;const f=Math.abs(frac-.25)<.01?'¼':Math.abs(frac-.5)<.01?'½':Math.abs(frac-.75)<.01?'¾':'';if(!f)return fmt(x);return whole?`${whole}${f}`:f;}
+function pluralUnit(food,qty){const one=Math.abs(qty-1)<.02;return one?food.unit:(unitPlurals[food.unit]||food.unit);}
+function unitQuantityText(food,grams){
+ const g=Math.max(0,n(grams));
+ const weightOnly=new Set(['chicken','turkey','whitefish','beeflean','chicken_thigh','salmon','tilapia','chickenliver','chickendrumstick','turkeyshawarma','cod','halibut','nileperch','seabass','seabream','beef_sheitel','beef_sirloin','beef_filet','beef_weisbraten','beef_liver','chicken_quarter']);
+ if(weightOnly.has(food.id))return `${fmtGram(g)} גרם`;
+ if(food.id==='tuna')return Math.abs(g-112)<7?'קופסה מסוננת':`${fmtGram(g)} גרם`;
+ if(food.id==='oliveoil'){
+  if(g<11.5){const q=Math.max(0,Math.round(g/5));return `${niceQty(q)} ${q===1?'כפית':'כפיות'}`;}
+  const q=Math.max(0,Math.round(g/13.5*4)/4);return `${niceQty(q)} ${q===1?'כף':'כפות'}`;
+ }
+ if(['tahini','shkedia_tahini'].includes(food.id)){
+  if(g<12){const q=Math.max(0,Math.round(g/5));return `${niceQty(q)} ${q===1?'כפית':'כפיות'}`;}
+  if(Math.abs(g-20)<1)return 'כף + כפית';
+  const q=Math.max(0,Math.round(g/15*4)/4);return `${niceQty(q)} ${q===1?'כף':'כפות'}`;
+ }
+ const units=g/Math.max(.1,n(food.g));
+ const rounded=Math.round(units*4)/4;
+ const unit=pluralUnit(food,rounded);
+ return `${niceQty(rounded)} ${unit}`;
+}
+function fmtGram(v){const x=n(v);return Math.abs(x-Math.round(x))<0.05?fmt(Math.round(x)):fixed(x,1);}
+function gramsText(food,grams){return unitQuantityText(food,grams).includes('גרם')?'':`${fmtGram(grams)} ג׳`;}
+function quantitySummary(food,grams){return `<strong>${esc(unitQuantityText(food,grams))}</strong><small>(${fmtGram(grams)} ג׳)</small>`;}
+function quantityStep(food){
+ if(food.id==='oliveoil')return 5;
+ if(['tahini','shkedia_tahini','peanutbutter','almondbutter','cashewbutter','butter','cream9'].includes(food.id))return 5;
+ if(['rice','brownrice','pasta','bulgur','quinoa','couscous','ptitim','buckwheat','lentils','peas','wheatcooked','sweetpotato_boiled','potato','potato_baked','sweetpotato'].includes(food.id))return Math.max(10,Math.round(n(food.g)/4));
+ if(['chicken','turkey','whitefish','beeflean','chicken_thigh','salmon','tilapia','chickenliver','chickendrumstick','turkeyshawarma','cod','halibut','nileperch','seabass','seabream','beef_sheitel','beef_sirloin','beef_filet','beef_weisbraten','beef_liver','chicken_quarter','tuna'].includes(food.id))return 25;
+ if(['yoplait_go_zero','muller_active','danone_lightfruit','yoplait_golite','protein_yogurt','protein_drink','pro_coffee0','pro_hazelnut0'].includes(food.id))return 50;
+ return Math.max(.1,n(food.g));
+}
+function calcFood(food,grams){const k=n(grams)/100;return {kcal:n(food.kcal)*k,p:n(food.p)*k,c:n(food.c)*k,f:n(food.f)*k}}
+// Sum raw values first and round only when showing them. This prevents per-item rounding drift.
 function macrosFor(items, eatenOnly=false){return items.reduce((s,it)=>{if(eatenOnly&&!it.eaten)return s;const food=state.foodDb.find(f=>f.id===it.foodId);if(!food)return s;const grams=eatenOnly?(Number.isFinite(Number(it.actualGrams))?Number(it.actualGrams):it.grams):it.grams;const c=calcFood(food,grams);s.kcal+=c.kcal;s.p+=c.p;s.c+=c.c;s.f+=c.f;return s},{kcal:0,p:0,c:0,f:0})}
 function dayTotals(){return Object.keys(mealNames).reduce((s,m)=>{const c=macrosFor(currentDay()[m],true);Object.keys(s).forEach(k=>s[k]+=c[k]);return s},{kcal:0,p:0,c:0,f:0})}
 function dayPlannedTotals(){return Object.keys(mealNames).reduce((s,m)=>{const c=macrosFor(currentDay()[m]);Object.keys(s).forEach(k=>s[k]+=c[k]);return s},{kcal:0,p:0,c:0,f:0})}
 function todayPretty(){const d=new Date();return d.toLocaleDateString('he-IL',{weekday:'long',day:'numeric',month:'long'})}
+function waterLabel(ml){const v=Math.max(0,n(ml));if(v<1000)return `${fmt(v)} מ״ל`;const liters=v/1000;return `${(Math.round(liters*100)/100).toLocaleString('he-IL',{maximumFractionDigits:2})} ליטר`;}
+function renderWater(){
+ const day=currentDay(),ml=Math.max(0,n(day.waterMl)),goal=[1500,2000,2500,3000,3500].includes(Number(state.waterGoalMl))?Number(state.waterGoalMl):2000;
+ const liters=ml/1000,goalLiters=goal/1000,remaining=Math.max(0,goal-ml);
+ $('waterRing').style.setProperty('--water-pct',`${Math.min(100,ml/goal*100)*3.6}deg`);
+ $('waterLiters').textContent=(Math.round(liters*100)/100).toLocaleString('he-IL',{maximumFractionDigits:2});
+ $('waterAmountSummary').textContent=waterLabel(ml);
+ $('waterSummary').textContent=`${waterLabel(ml)} מתוך ${goalLiters.toLocaleString('he-IL',{maximumFractionDigits:1})} ליטר`;
+ $('waterRemaining').textContent=remaining===0?`הגעת ליעד המעקב`:`נותרו ${waterLabel(remaining)} ליעד`;
+ $('waterGoalSelect').value=String(goal);
+ $('waterRing').setAttribute('aria-label',`נרשמו ${waterLabel(ml)} מתוך יעד מעקב ${waterLabel(goal)}`);
+}
+function changeWater(delta){const day=currentDay();day.waterMl=Math.max(0,Math.round((n(day.waterMl)+n(delta))/10)*10);saveState();renderWater();showToast(delta<0?'עודכנה כמות המים':'השתייה נוספה ליומן');}
 function renderHeader(){
  $('todayDate').textContent=todayPretty();const t=dayTotals(),planned=dayPlannedTotals(),g=state.goals;
  $('calorieNum').textContent=fmt(t.kcal);$('remainingCalories').textContent=fmt(g.kcal);$('plannedCalories').textContent=fmt(planned.kcal);
  $('calorieRing').style.setProperty('--pct',`${Math.min(100,t.kcal/Math.max(1,g.kcal)*100)*3.6}deg`);
  $('calorieStatus').textContent=t.kcal===0?'עוד לא סימנת פריטים שאכלת.':t.kcal<=g.kcal?`נאכלו ${fmt(t.kcal)} קלוריות מתוך היעד.`:`נאכלו ${fmt(t.kcal)} קלוריות — מעל היעד שהוגדר.`;
  for(const [key,letter] of [['p','p'],['c','c'],['f','f']]){$(letter+'Now').textContent=fmt(t[key]);$(letter+'Goal').textContent=fmt(g[key]);$(letter+'Bar').style.width=`${Math.min(100,t[key]/Math.max(1,g[key])*100)}%`;}
+ renderWater();
 }
 function renderMeals(){
  const day=currentDay();
@@ -514,7 +2129,7 @@ function renderMeals(){
  }).join('');
  document.querySelectorAll('[data-toggle-meal]').forEach(b=>b.addEventListener('click',()=>{const m=b.dataset.toggleMeal;expandedMeals[m]=!expandedMeals[m];renderMeals()}));
  document.querySelectorAll('[data-item-eaten]').forEach(btn=>btn.addEventListener('click',()=>{const {meal,index}=btn.dataset;const item=currentDay()[meal][Number(index)];if(item){item.eaten=!item.eaten;saveState();renderAll();showToast(item.eaten?'סומן כנאכל':'הסימון הוסר')}}));
- document.querySelectorAll('[data-adjust-actual]').forEach(btn=>btn.addEventListener('click',()=>{const [meal,index,delta]=btn.dataset.adjustActual.split(':');const item=currentDay()[meal][Number(index)];if(!item)return;const food=state.foodDb.find(f=>f.id===item.foodId);if(!food)return;const step=Math.max(.1,n(food.g));const current=Number.isFinite(Number(item.actualGrams))?Number(item.actualGrams):item.grams;item.actualGrams=Math.max(0,Math.round((current+n(delta)*step)*10)/10);saveState();renderAll()}));
+ document.querySelectorAll('[data-adjust-actual]').forEach(btn=>btn.addEventListener('click',()=>{const [meal,index,delta]=btn.dataset.adjustActual.split(':');const item=currentDay()[meal][Number(index)];if(!item)return;const food=state.foodDb.find(f=>f.id===item.foodId);if(!food)return;const step=quantityStep(food);const current=Number.isFinite(Number(item.actualGrams))?Number(item.actualGrams):item.grams;item.actualGrams=Math.max(0,Math.round((current+n(delta)*step)*10)/10);saveState();renderAll()}));
  document.querySelectorAll('[data-remove-item]').forEach(b=>b.addEventListener('click',()=>{const [meal,index]=b.dataset.removeItem.split(':');currentDay()[meal].splice(Number(index),1);saveState();renderAll();showToast('המזון הוסר מהארוחה')}));
  document.querySelectorAll('[data-swap-item]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();e.stopPropagation();const [meal,index]=b.dataset.swapItem.split(':');openSwapPicker(meal,Number(index))}));
  document.querySelectorAll('[data-mark-meal]').forEach(b=>b.addEventListener('click',()=>{const m=b.dataset.markMeal,items=currentDay()[m],allEaten=items.length&&items.every(it=>it.eaten);items.forEach(it=>{it.eaten=!allEaten;if(!Number.isFinite(Number(it.actualGrams)))it.actualGrams=it.grams});saveState();renderAll();showToast(allEaten?'הסימון הוסר מכל פריטי הארוחה':'כל פריטי הארוחה סומנו כנאכלו')}));
@@ -522,23 +2137,24 @@ function renderMeals(){
 function renderMealItem(m,it,idx){
  const food=state.foodDb.find(f=>f.id===it.foodId);if(!food)return '';
  const plannedGrams=n(it.grams),actualGrams=Number.isFinite(Number(it.actualGrams))?Math.max(0,n(it.actualGrams)):plannedGrams;
- const activeGrams=actualGrams,c=calcFood(food,activeGrams);
+ const planC=calcFood(food,plannedGrams),actualC=calcFood(food,actualGrams);
  const planText=unitQuantityText(food,plannedGrams),actualText=unitQuantityText(food,actualGrams);
+ const differs=Math.abs(plannedGrams-actualGrams)>0.05;
  return `<div class="food-line ${it.eaten?'is-eaten':''}">
   <div class="food-header-row">
    <button type="button" class="eaten-toggle" data-item-eaten data-meal="${m}" data-index="${idx}" aria-pressed="${it.eaten?'true':'false'}" aria-label="${it.eaten?'בטל סימון':'סמן כנאכל'}: ${esc(food.name)}">${it.eaten?'✓':''}</button>
    <div class="food-main">
     <h4>${esc(food.name)}${it.eaten?'<span class="eaten-pill">נאכל</span>':''}</h4>
-    <div class="food-plan-qty"><span>בתפריט</span><strong>${esc(planText)}</strong><small>${fmt(plannedGrams,1)} ג׳</small></div>
-    <div class="actual-qty-row"><span class="actual-label">כמות בפועל</span><div class="qty-counter"><button type="button" class="qty-step" data-adjust-actual="${m}:${idx}:-1" aria-label="הפחת ${esc(food.unit)}">−</button><span class="qty-count">${esc(actualText)}<small>${fmt(actualGrams,1)} ג׳</small></span><button type="button" class="qty-step" data-adjust-actual="${m}:${idx}:1" aria-label="הוסף ${esc(food.unit)}">＋</button></div></div>
-    <div class="food-macros">בכמות שנבחרה: ${fmt(c.kcal)} קל · חלבון ${fixed(c.p)} ג׳ · פחמימה ${fixed(c.c)} ג׳ · שומן ${fixed(c.f)} ג׳</div>
+    <div class="food-plan-qty"><span>בתפריט</span><strong>${esc(planText)}</strong>${gramsText(food,plannedGrams)?`<small>${gramsText(food,plannedGrams)}</small>`:''}</div>
+    <div class="actual-qty-row"><span class="actual-label">כמות בפועל</span><div class="qty-counter"><button type="button" class="qty-step" data-adjust-actual="${m}:${idx}:-1" aria-label="הפחת כמות">−</button><span class="qty-count">${esc(actualText)}${gramsText(food,actualGrams)?`<small>${gramsText(food,actualGrams)}</small>`:''}</span><button type="button" class="qty-step" data-adjust-actual="${m}:${idx}:1" aria-label="הוסף כמות">＋</button></div></div>
+    <div class="food-macros">${differs?'בתכנון':'בכמות הזו'}: ${fmt(planC.kcal)} קל · חלבון ${fmt(planC.p)} ג׳ · פחמימה ${fmt(planC.c)} ג׳ · שומן ${fmt(planC.f)} ג׳${differs?`<div class="food-macros-actual">בכמות בפועל: ${fmt(actualC.kcal)} קל · חלבון ${fmt(actualC.p)} · פחמימה ${fmt(actualC.c)} · שומן ${fmt(actualC.f)} ג׳</div>`:''}</div>
     <div class="food-actions"><button class="btn" data-swap-item="${m}:${idx}">⇄ החלפה</button><button class="btn" data-remove-item="${m}:${idx}" aria-label="הסר מזון">הסר</button></div>
    </div>
   </div>
  </div>`;
 }
 function renderCategoryChips(){const cats=[['all','הכול'],['protein','חלבונים'],['carbs','פחמימות'],['fat','שומנים'],['fruit','פירות'],['other','אחר']];$('categoryChips').innerHTML=cats.map(([id,name])=>`<button class="chip ${activeCategory===id?'active':''}" data-cat="${id}">${name}</button>`).join('');document.querySelectorAll('[data-cat]').forEach(b=>b.addEventListener('click',()=>{activeCategory=b.dataset.cat;renderFoods()}))}
-function renderFoods(){renderCategoryChips();const q=$('foodSearch').value.trim().toLowerCase();const foods=state.foodDb.filter(f=>(activeCategory==='all'||f.cat===activeCategory)&&f.name.toLowerCase().includes(q));$('foodGrid').innerHTML=foods.length?foods.map(f=>`<article class="food-card"><div class="food-top"><div class="food-name">${esc(f.name)}</div><span class="cat-badge">${categoryNames[f.cat]||'אחר'}</span></div><div class="food-info">100 גרם · ${fmt(f.kcal)} קל</div><div class="food-info">חלבון ${fixed(f.p)} ג׳ · פחמימה ${fixed(f.c)} ג׳ · שומן ${fixed(f.f)} ג׳</div><div class="food-info">1 ${esc(f.unit)} ≈ ${fmt(f.g,1)} גרם</div><div class="food-quality ${foodDataLabel(f).startsWith('מוצר לדוגמה')?'product':foodDataLabel(f).startsWith('ערך משוער')?'variable':''}">${esc(foodDataLabel(f))}</div>${f.base?`<div class="food-info">${esc(f.base)}</div>`:''}<button class="btn" data-choose-food="${esc(f.id)}">הוסף לארוחה ＋</button></article>`).join(''):`<div class="empty" style="grid-column:1/-1">לא מצאתי מזון מתאים לחיפוש.</div>`;document.querySelectorAll('[data-choose-food]').forEach(b=>b.addEventListener('click',()=>openFoodPicker(null,b.dataset.chooseFood)))}
+function renderFoods(){renderCategoryChips();const q=$('foodSearch').value.trim().toLowerCase();const foods=state.foodDb.filter(f=>(activeCategory==='all'||f.cat===activeCategory)&&f.name.toLowerCase().includes(q));$('foodGrid').innerHTML=foods.length?foods.map(f=>`<article class="food-card"><div class="food-top"><div class="food-name">${esc(f.name)}</div><span class="cat-badge">${categoryNames[f.cat]||'אחר'}</span></div><div class="food-info">100 גרם · ${fmt(f.kcal)} קל</div><div class="food-info">חלבון ${fmt(f.p)} ג׳ · פחמימה ${fmt(f.c)} ג׳ · שומן ${fmt(f.f)} ג׳</div><div class="food-info">1 ${esc(f.unit)} ≈ ${fmt(f.g,1)} גרם</div><div class="food-quality ${foodDataLabel(f).startsWith('מוצר לדוגמה')?'product':foodDataLabel(f).startsWith('ערך משוער')?'variable':''}">${esc(foodDataLabel(f))}</div>${f.base?`<div class="food-info">${esc(f.base)}</div>`:''}<button class="btn" data-choose-food="${esc(f.id)}">הוסף לארוחה ＋</button></article>`).join(''):`<div class="empty" style="grid-column:1/-1">לא מצאתי מזון מתאים לחיפוש.</div>`;document.querySelectorAll('[data-choose-food]').forEach(b=>b.addEventListener('click',()=>openFoodPicker(null,b.dataset.chooseFood)))}
 function renderMeasurements(){const arr=[...(state.measurements||[])].sort((a,b)=>b.date.localeCompare(a.date));$('measurementsList').innerHTML=arr.length?`<table><thead><tr><th>תאריך</th><th>משקל</th><th>מותניים</th><th>צוואר</th><th>חזה</th><th>זרוע</th><th>ירך</th><th>הערות</th><th></th></tr></thead><tbody>${arr.map(m=>`<tr><td>${esc(m.date)}</td><td>${val(m.weight,' ק״ג')}</td><td>${val(m.waist,' ס״מ')}</td><td>${val(m.neck,' ס״מ')}</td><td>${val(m.chest,' ס״מ')}</td><td>${val(m.arm,' ס״מ')}</td><td>${val(m.thigh,' ס״מ')}</td><td>${esc(m.notes||'—')}</td><td><button class="remove-btn" data-delete-measure="${esc(m.id)}">×</button></td></tr>`).join('')}</tbody></table>`:`<div class="measure-empty">עדיין אין מדידות שמורות. אפשר להוסיף מדידה ראשונה בטופס למעלה.</div>`;document.querySelectorAll('[data-delete-measure]').forEach(b=>b.addEventListener('click',()=>{if(confirm('למחוק את המדידה הזאת?')){state.measurements=state.measurements.filter(m=>m.id!==b.dataset.deleteMeasure);saveState();renderMeasurements();showToast('המדידה נמחקה')}}))}
 function val(v,suffix){return v===undefined||v===null||v===''?'—':esc(String(v)+suffix)}
 function renderAll(){renderHeader();renderMeals();renderFoods();renderMeasurements()}
@@ -549,7 +2165,7 @@ function openFoodPicker(meal,foodId){
  if(!modalFood){showToast('בחר מזון ממאגר המזון');switchPage('foods');return}
  quantityMode='units';$('modeUnits').classList.add('primary');$('modeGrams').classList.remove('primary');
  $('quantityLabel').textContent=`כמות ביחידות (${modalFood.unit})`;$('foodQuantity').value=1;
- $('selectedFoodInfo').innerHTML=`<strong>${esc(modalFood.name)}</strong><div class="hint">ל־100 גרם: ${fmt(modalFood.kcal)} קל · חלבון ${fixed(modalFood.p)} ג׳ · פחמימה ${fixed(modalFood.c)} ג׳ · שומן ${fixed(modalFood.f)} ג׳</div><div class="hint">1 ${esc(modalFood.unit)} ≈ ${fmt(modalFood.g,1)} גרם</div><div class="food-quality ${foodDataLabel(modalFood).startsWith('מוצר לדוגמה')?'product':foodDataLabel(modalFood).startsWith('ערך משוער')?'variable':''}">${esc(foodDataLabel(modalFood))}</div>`;
+ $('selectedFoodInfo').innerHTML=`<strong>${esc(modalFood.name)}</strong><div class="hint">ל־100 גרם: ${fmt(modalFood.kcal)} קל · חלבון ${fmt(modalFood.p)} ג׳ · פחמימה ${fmt(modalFood.c)} ג׳ · שומן ${fmt(modalFood.f)} ג׳</div><div class="hint">1 ${esc(modalFood.unit)} ≈ ${fmtGram(modalFood.g)} גרם</div><div class="food-quality ${foodDataLabel(modalFood).startsWith('מוצר לדוגמה')?'product':foodDataLabel(modalFood).startsWith('ערך משוער')?'variable':''}">${esc(foodDataLabel(modalFood))}</div>`;
  updateLiveMacros();openModal('addModal');
 }
 function openPickerWithMeal(meal){$('chooseMeal').value=meal;switchPage('foods')}
@@ -558,39 +2174,53 @@ function updateLiveMacros(){
  const amount=n($('foodQuantity').value),grams=quantityMode==='grams'?amount:amount*modalFood.g,c=calcFood(modalFood,grams);
  const m=$('chooseMeal').value,t=mealTarget(m);
  const percent=(v,target)=>target>0?Math.round(v/target*100):0;
- $('liveMacros').innerHTML=`<strong>${fmt(grams,1)} גרם</strong> ≈ ${fixed(grams/Math.max(.1,modalFood.g),1)} × ${esc(modalFood.unit)}<div class="hint" style="margin-top:6px">${fmt(c.kcal)} קל · חלבון ${fixed(c.p)} ג׳ · פחמימה ${fixed(c.c)} ג׳ · שומן ${fixed(c.f)} ג׳</div><div class="hint" style="margin-top:6px">מתוך יעד הארוחה: חלבון ${percent(c.p,t.p)}% · פחמימות ${percent(c.c,t.c)}% · שומן ${percent(c.f,t.f)}%</div>`;
- $('unitHelp').textContent=quantityMode==='grams'?`הכמות מחושבת לפי 100 גרם. יחידה ביתית היא קירוב: 1 ${modalFood.unit} ≈ ${fmt(modalFood.g,1)} גרם.`:`כל יחידה של ${modalFood.unit} מוגדרת כאן כ־${fmt(modalFood.g,1)} גרם. אפשר לעבור לגרמים אם גודל היחידה שלך שונה.`;
+ $('liveMacros').innerHTML=`<strong>${fmtGram(grams)} גרם</strong> ≈ ${fixed(grams/Math.max(.1,modalFood.g),1)} × ${esc(modalFood.unit)}<div class="hint" style="margin-top:6px">${fmt(c.kcal)} קל · חלבון ${fmt(c.p)} ג׳ · פחמימה ${fmt(c.c)} ג׳ · שומן ${fmt(c.f)} ג׳</div><div class="hint" style="margin-top:6px">מתוך יעד הארוחה: חלבון ${percent(c.p,t.p)}% · פחמימות ${percent(c.c,t.c)}% · שומן ${percent(c.f,t.f)}%</div>`;
+ $('unitHelp').textContent=quantityMode==='grams'?`הכמות מחושבת לפי 100 גרם. יחידה ביתית היא קירוב: 1 ${modalFood.unit} ≈ ${fmtGram(modalFood.g)} גרם.`:`כל יחידה של ${modalFood.unit} מוגדרת כאן כ־${fmtGram(modalFood.g)} גרם. אפשר לעבור לגרמים אם גודל היחידה שלך שונה.`;
 }
 function openModal(id){$(id).classList.add('open');document.body.style.overflow='hidden'}function closeModal(id){$(id).classList.remove('open');if(!document.querySelector('.overlay.open'))document.body.style.overflow=''}
 function showToast(text){const t=$('toast');t.textContent=text;t.classList.add('show');clearTimeout(showToast.timer);showToast.timer=setTimeout(()=>t.classList.remove('show'),2300)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}
 function addFoodToMeal(food,meal,grams){const q=Math.round(grams*10)/10;currentDay()[meal].push({foodId:food.id,grams:q,actualGrams:q,eaten:false});saveState();renderAll()}
 let pendingSwap=null;
-function swapMacroKey(cat){return cat==='protein'?'p':cat==='carbs'||cat==='fruit'?'c':cat==='fat'?'f':'kcal'}
-function swapMacroLabel(cat){return cat==='protein'?'כמות חלבון דומה':cat==='carbs'?'כמות פחמימות דומה':cat==='fruit'?'כמות פחמימות דומה':cat==='fat'?'כמות שומן דומה':'קלוריות דומות'}
-function suggestedSwapGrams(oldFood,oldGrams,newFood){const key=swapMacroKey(oldFood.cat);const target=calcFood(oldFood,oldGrams)[key];const per100=n(newFood[key]);if(per100<=0)return oldGrams;return Math.max(1,Math.round((target/per100*100)*10)/10)}
+function swapMacroKey(cat){return cat==='protein'?'p':cat==='fat'?'f':'c'}
+function swapMacroLabel(cat){return cat==='protein'?'חלבון':cat==='fat'?'שומן':'פחמ׳'}
+function swapGroupCats(cat){return [cat]}
+function sameSwapGroup(a,b){return swapGroupCats(a).includes(b)}
+function fruitAlreadyPlanned(excludeMeal,excludeIndex){return Object.keys(mealNames).some(m=>currentDay()[m].some((it,i)=>{if(m===excludeMeal&&i===excludeIndex)return false;const f=state.foodDb.find(x=>x.id===it.foodId);return f&&f.cat==='fruit';}))}
+function swapAccent(cat){return cat==='protein'?'#7899e7':cat==='fat'?'#d875a2':'#d7851a'}
+function suggestedSwapGrams(oldFood,oldGrams,newFood){const key=swapMacroKey(oldFood.cat);let target=calcFood(oldFood,oldGrams)[key];if(oldFood.cat==='carbs'&&newFood.cat==='fruit')target*=0.5;const per100=n(newFood[key]);if(per100<=0)return oldGrams;return Math.max(1,Math.round((target/per100*100)*10)/10)}
 function openSwapPicker(meal,index){
  const item=currentDay()[meal][index];if(!item)return;const food=state.foodDb.find(f=>f.id===item.foodId);if(!food)return;
- pendingSwap={meal,index};$('swapSearch').value='';const current=calcFood(food,item.grams);$('swapSubtitle').textContent=`${mealNames[meal]} · חלופות מקבוצת ${categoryNames[food.cat]||'אחר'}`;$('swapCurrent').innerHTML=`<strong>הפריט הנוכחי: ${esc(food.name)}</strong><div class="hint">${fmt(item.grams,1)} גרם ≈ ${fixed(item.grams/Math.max(.1,food.g),1)} × ${esc(food.unit)} · ${fmt(current.kcal)} קל</div><div class="hint">חלבון ${fixed(current.p)} ג׳ · פחמימות ${fixed(current.c)} ג׳ · שומן ${fixed(current.f)} ג׳</div>`;
- $('swapHint').textContent=`אציג רק מזונות מאותה קבוצה. הכמות לכל חלופה תחושב אוטומטית לפי ${swapMacroLabel(food.cat)} שבפריט הזה בארוחה ${mealNames[meal]} — לא לפי יעד כללי של יום אחר. אפשר לעדכן את הכמות אחרי הבחירה.`;
- renderSwapOptions();openModal('swapModal');
+ pendingSwap={meal,index};$('swapSearch').value='';
+ const categories=swapGroupCats(food.cat),count=state.foodDb.filter(f=>categories.includes(f.cat)&&f.id!==food.id).length;
+ $('swapTitle').textContent=food.name;$('swapSubtitle').textContent=`${count} חלופות`;
+ $('swapCurrent').classList.add('hidden');$('swapHint').classList.add('hidden');
+ $('swapSearch').placeholder='חיפוש מזון…';renderSwapOptions();openModal('swapModal');
 }
 function renderSwapOptions(){
  if(!pendingSwap)return;const item=currentDay()[pendingSwap.meal][pendingSwap.index];if(!item)return;const oldFood=state.foodDb.find(f=>f.id===item.foodId);if(!oldFood)return;
- const q=$('swapSearch').value.trim().toLowerCase();const options=state.foodDb.filter(f=>f.cat===oldFood.cat&&f.id!==oldFood.id&&f.name.toLowerCase().includes(q));
- $('swapOptions').innerHTML=options.length?options.map(f=>{const grams=suggestedSwapGrams(oldFood,item.grams,f),c=calcFood(f,grams);return `<button type="button" class="swap-option" data-swap-food="${esc(f.id)}"><span><strong>${esc(f.name)}</strong><small class="swap-amount-main">${esc(unitQuantityText(f,grams))}</small><small>≈ ${fmt(grams,1)} גרם</small><small>חלבון ${fixed(c.p)} ג׳ · פחמימות ${fixed(c.c)} ג׳ · שומן ${fixed(c.f)} ג׳</small></span><span class="swap-kcal">${fmt(c.kcal)} קל<br><small>בחירה ←</small></span></button>`}).join(''):`<div class="empty">אין חלופות מאותה קבוצת מזון לפי החיפוש. נסה מונח אחר.</div>`;
+ const q=$('swapSearch').value.trim().toLowerCase(),cats=swapGroupCats(oldFood.cat);
+ const options=state.foodDb.filter(f=>cats.includes(f.cat)&&f.id!==oldFood.id&&f.name.toLowerCase().includes(q));
+ $('swapSubtitle').textContent=`${options.length} חלופות`;
+ $('swapOptions').innerHTML=options.length?options.map(f=>{
+   const grams=suggestedSwapGrams(oldFood,item.grams,f),c=calcFood(f,grams),key=swapMacroKey(oldFood.cat);
+   const macroAmount=key==='p'?c.p:key==='f'?c.f:c.c;
+   const fruitBlocked=f.cat==='fruit'&&fruitAlreadyPlanned(pendingSwap.meal,pendingSwap.index);
+   const shortMacro=oldFood.cat==='protein'?'ח׳':oldFood.cat==='fat'?'ש׳':'פ׳';const hint=fruitBlocked?'פרי כבר נבחר היום':`${fmt(macroAmount)} ${shortMacro}`;
+   return `<button type="button" class="swap-option" data-swap-food="${esc(f.id)}" ${fruitBlocked?'disabled':''} aria-label="${fruitBlocked?'פרי כבר נבחר היום: ':''}החלף ל${esc(f.name)}, ${esc(unitQuantityText(f,grams))}, ${fmtGram(grams)} גרם"><span class="swap-dot" style="background:${swapAccent(f.cat)}"></span><span class="swap-info"><strong>${esc(f.name)}</strong><small class="swap-amount-main">${esc(unitQuantityText(f,grams))}</small>${unitQuantityText(f,grams).includes('גרם')?'':`<small class="swap-grams">${fmtGram(grams)} גרם</small>`}</span><span class="swap-value">${hint}</span></button>`
+ }).join(''):`<div class="empty">אין מזונות מתאימים לחיפוש.</div>`;
  document.querySelectorAll('[data-swap-food]').forEach(b=>b.addEventListener('click',()=>applySwap(b.dataset.swapFood)));
 }
 function applySwap(foodId){
- if(!pendingSwap)return;const {meal,index}=pendingSwap;const item=currentDay()[meal][index],oldFood=state.foodDb.find(f=>f.id===item.foodId),newFood=state.foodDb.find(f=>f.id===foodId);if(!item||!oldFood||!newFood||oldFood.cat!==newFood.cat)return;
- item.grams=suggestedSwapGrams(oldFood,item.grams,newFood);item.actualGrams=item.grams;item.foodId=newFood.id;item.eaten=false;expandedMeals[meal]=true;saveState();closeModal('swapModal');pendingSwap=null;renderAll();showToast('הוחלף המזון — הכמות הותאמה למאקרו של הפריט בארוחה');
+ if(!pendingSwap)return;const {meal,index}=pendingSwap;const item=currentDay()[meal][index],oldFood=state.foodDb.find(f=>f.id===item.foodId),newFood=state.foodDb.find(f=>f.id===foodId);if(!item||!oldFood||!newFood||!sameSwapGroup(oldFood.cat,newFood.cat))return;if(newFood.cat==='fruit'&&oldFood.cat!=='fruit'&&fruitAlreadyPlanned(meal,index)){showToast('אפשר לבחור החלפת פרי אחת ביום');return;}
+ item.grams=suggestedSwapGrams(oldFood,item.grams,newFood);item.actualGrams=item.grams;item.foodId=newFood.id;item.eaten=false;expandedMeals[meal]=true;saveState();closeModal('swapModal');pendingSwap=null;renderAll();showToast('המזון הוחלף והכמות עודכנה');
 }
 function openTargets(){const g=state.goals;$('goalKcal').value=g.kcal;$('goalP').value=g.p;$('goalC').value=g.c;$('goalF').value=g.f;openModal('targetsModal')}
 function exportBackup(){const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`masse-clean-backup-${todayKey()}.json`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1200);showToast('קובץ הגיבוי נוצר')}
 // Navigation
 document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>switchPage(t.dataset.page)));
 $('foodSearch').addEventListener('input',renderFoods);$('resetSearch').addEventListener('click',()=>{$('foodSearch').value='';activeCategory='all';renderFoods()});$('targetsBtn').addEventListener('click',openTargets);$('exportBtn').addEventListener('click',exportBackup);$('importOpenBtn').addEventListener('click',()=>openModal('importModal'));
-$('clearDayBtn').addEventListener('click',()=>{if(confirm('למחוק את כל הפריטים מהיום? המדידות ומאגר המזון לא יימחקו.')){state.days[todayKey()]={breakfast:[],lunch:[],snack:[],dinner:[],_userCleared:true};saveState();renderAll();showToast('הרישום של היום אופס')}});
+$('clearDayBtn').addEventListener('click',()=>{if(confirm('לאפס את רישום האוכל והשתייה של היום? המדידות ומאגר המזון לא יימחקו.')){state.days[todayKey()]={breakfast:[],lunch:[],snack:[],dinner:[],waterMl:0,_userCleared:true};saveState();renderAll();showToast('הרישום של היום אופס')}});
 $('loadTemplateBtn').addEventListener('click',()=>{if(confirm('לטעון מחדש את התפריט הבסיסי? פעולה זו תחליף את רשימת המזונות של היום.')){state.days[todayKey()]=makeStarterDay();saveState();renderAll();showToast('התפריט הבסיסי נטען — סמנו מה אכלתם')}});
 $('swapSearch').addEventListener('input',renderSwapOptions);
 $('modeGrams').addEventListener('click',()=>{if(quantityMode==='units'){$('foodQuantity').value=n($('foodQuantity').value)*modalFood.g;quantityMode='grams';$('modeGrams').classList.add('primary');$('modeUnits').classList.remove('primary');$('quantityLabel').textContent='כמות בגרמים';updateLiveMacros()}});
@@ -603,7 +2233,7 @@ $('addCustomBtn').addEventListener('click',()=>openModal('customModal'));
 $('customForm').addEventListener('submit',e=>{e.preventDefault();const name=$('customName').value.trim();if(!name)return;const food={id:'custom_'+Date.now(),name,cat:$('customCat').value,kcal:n($('customKcal').value),p:n($('customP').value),c:n($('customC').value),f:n($('customF').value),unit:$('customUnit').value.trim()||'יחידה',g:n($('customUnitG').value)||100,base:'ערכים שהוזנו מתווית/באופן אישי',custom:true};state.foodDb.push(food);saveState();$('customForm').reset();$('customUnit').value='יחידה';$('customUnitG').value='100';activeCategory='all';renderAll();closeModal('customModal');showToast('המזון האישי נשמר במאגר')});
 $('measurementForm').addEventListener('submit',e=>{e.preventDefault();const date=$('mDate').value;if(!date)return;const row={id:'m_'+Date.now(),date};[['weight','mWeight'],['waist','mWaist'],['chest','mChest'],['arm','mArm'],['thigh','mThigh'],['neck','mNeck']].forEach(([key,id])=>{if($(id).value!=='')row[key]=n($(id).value)});row.notes=$('mNotes').value.trim();const existing=state.measurements.findIndex(m=>m.date===date);if(existing>=0)state.measurements[existing]=row;else state.measurements.push(row);saveState();renderMeasurements();$('measurementForm').reset();$('mDate').value=todayKey();showToast('המדידה נשמרה')});
 // A small, user-controlled restore flow
-$('importBtn').addEventListener('click',async()=>{const file=$('importFile').files[0];if(!file){showToast('בחר קובץ גיבוי קודם');return}try{const x=JSON.parse(await file.text());if(x.version!==1||!x.days||!Array.isArray(x.foodDb)||!x.goals)throw Error('bad file');if(!confirm('ייבוא הגיבוי יחליף את הנתונים הקיימים במכשיר. להמשיך?'))return;const legacy=Number(x.appUiVersion||0)<6;x.foodDb=x.foodDb.filter(f=>f.id!=='vegetables');if(legacy){x.goals.kcal=2517;if(x.goals.p===135&&x.goals.c===315&&x.goals.f===70)x.goals.c=337;}x.appUiVersion=6;for(const day of Object.values(x.days))for(const m of Object.keys(mealNames))if(Array.isArray(day[m])){const ids=day[m].map(it=>it.foodId);const expected={breakfast:['bread','egg','cottage3','vegetables','apple'],lunch:['chicken','rice','vegetables','oliveoil'],snack:['protein_yogurt','ricecake','almonds'],dinner:['tuna','pita','potato','vegetables','tahini','oliveoil']}[m];const updates={breakfast:{bread:[80,110],apple:[180,200]},lunch:{chicken:[100,80],rice:[350,415]},snack:{ricecake:[31.2,39]},dinner:{tuna:[90,100],pita:[80,105],potato:[175,210]}};if(legacy&&JSON.stringify(ids)===JSON.stringify(expected)){for(const it of day[m]){const upd=updates[m]&&updates[m][it.foodId];if(upd&&Math.abs(Number(it.grams)-upd[0])<.01){it.grams=upd[1];if(!Number.isFinite(Number(it.actualGrams))||Math.abs(Number(it.actualGrams)-upd[0])<.01)it.actualGrams=upd[1];}}}day[m]=day[m].filter(it=>it.foodId!=='vegetables');for(const it of day[m]){if(typeof it.eaten!=='boolean')it.eaten=true;if(!Number.isFinite(Number(it.actualGrams)))it.actualGrams=Number(it.grams)||0}}state=x;saveState();renderAll();closeModal('importModal');showToast('הגיבוי יובא בהצלחה')}catch(e){showToast('הקובץ לא זוהה כגיבוי תקין של האפליקציה')}});
+$('importBtn').addEventListener('click',async()=>{const file=$('importFile').files[0];if(!file){showToast('בחר קובץ גיבוי קודם');return}try{const x=JSON.parse(await file.text());if(x.version!==1||!x.days||!Array.isArray(x.foodDb)||!x.goals)throw Error('bad file');if(!confirm('ייבוא הגיבוי יחליף את הנתונים הקיימים במכשיר. להמשיך?'))return;const legacy=Number(x.appUiVersion||0)<6;const currentSeedIds=new Set(seedFoods.map(f=>f.id));x.foodDb=[...seedFoods,...x.foodDb.filter(f=>(f.custom||!currentSeedIds.has(f.id))&&f.id!=='vegetables')];if(legacy){x.goals.kcal=2517;if(x.goals.p===135&&x.goals.c===315&&x.goals.f===70)x.goals.c=337;}migrateUnmodifiedStarterPlans(x.days);x.appUiVersion=10;for(const day of Object.values(x.days))for(const m of Object.keys(mealNames))if(Array.isArray(day[m])){const ids=day[m].map(it=>it.foodId);const expected={breakfast:['bread','egg','cottage3','vegetables','apple'],lunch:['chicken','rice','vegetables','oliveoil'],snack:['protein_yogurt','ricecake','almonds'],dinner:['tuna','pita','potato','vegetables','tahini','oliveoil']}[m];const updates={breakfast:{bread:[80,110],apple:[180,200]},lunch:{chicken:[100,80],rice:[350,415]},snack:{ricecake:[31.2,39]},dinner:{tuna:[90,100],pita:[80,105],potato:[175,210]}};if(legacy&&JSON.stringify(ids)===JSON.stringify(expected)){for(const it of day[m]){const upd=updates[m]&&updates[m][it.foodId];if(upd&&Math.abs(Number(it.grams)-upd[0])<.01){it.grams=upd[1];if(!Number.isFinite(Number(it.actualGrams))||Math.abs(Number(it.actualGrams)-upd[0])<.01)it.actualGrams=upd[1];}}}day[m]=day[m].filter(it=>it.foodId!=='vegetables');for(const it of day[m]){if(typeof it.eaten!=='boolean')it.eaten=true;if(!Number.isFinite(Number(it.actualGrams)))it.actualGrams=Number(it.grams)||0}}if(![1500,2000,2500,3000,3500].includes(Number(x.waterGoalMl)))x.waterGoalMl=2000;for(const d of Object.values(x.days||{}))if(!Number.isFinite(Number(d.waterMl)))d.waterMl=0;state=x;saveState();renderAll();closeModal('importModal');showToast('הגיבוי יובא בהצלחה')}catch(e){showToast('הקובץ לא זוהה כגיבוי תקין של האפליקציה')}});
 // Set the modal meal when invoked from day view: clicking a meal's own button opens food list, with the meal selected.
 const originalRenderMeals=renderMeals;
 // Override via delegated event: when opening food listing from meal button, keep intended meal for next selection.
@@ -612,11 +2242,22 @@ let preferredMeal='breakfast';document.addEventListener('click',e=>{const b=e.ta
 const oldOpenFoodPicker=openFoodPicker;
 // Update global handler behavior with same name impossible after event registration, so set preferred selection as first default via button's previous meal.
 const oldFoodGridListener=renderFoods;
+
+// Daily water tracking is local to each calendar day and included in backup JSON.
+document.querySelectorAll('[data-water-add]').forEach(b=>b.addEventListener('click',()=>changeWater(Number(b.dataset.waterAdd))));
+$('waterCustomAdd').addEventListener('click',()=>{
+ const amount=n($('waterQty').value),unit=$('waterUnit').value;
+ if(amount<=0){showToast('הזן כמות גדולה מאפס');return;}
+ const ml=unit==='liters'?amount*1000:unit==='cups'?amount*250:amount;
+ currentDay().waterMl=Math.max(0,Math.round((n(currentDay().waterMl)+ml)/10)*10);
+ $('waterQty').value='1';saveState();renderWater();showToast(`נוספו ${waterLabel(ml)} ליומן`);
+});
+$('waterGoalSelect').addEventListener('change',()=>{state.waterGoalMl=Number($('waterGoalSelect').value)||2000;saveState();renderWater();showToast('יעד המעקב עודכן');});
+
 // Initialize defaults from existing measurements if absent; preserve data typed by user on later visits.
 $('mDate').value=todayKey();
 renderAll();
 })();
 </script>
-<script>if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) { window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {})); }</script>
 </body>
 </html>
