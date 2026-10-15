@@ -1,16 +1,15 @@
-const CACHE_NAME = 'masse-clean-v11-persistent';
+const CACHE_NAME = 'masse-clean-v12-swap-viewport';
 const SCOPE_URL = self.registration.scope;
 const APP_URL = new URL('./index.html', SCOPE_URL).href;
 const ROOT_URL = new URL('./', SCOPE_URL).href;
 const ASSETS = [
-  ROOT_URL,
-  APP_URL,
-  new URL('./manifest-v11.webmanifest', SCOPE_URL).href,
+  ROOT_URL, APP_URL,
+  new URL('./manifest-v12.webmanifest', SCOPE_URL).href,
   new URL('./manifest.webmanifest', SCOPE_URL).href,
-  new URL('./icon-home-v11.svg', SCOPE_URL).href,
-  new URL('./icon-home-v11-180.png', SCOPE_URL).href,
-  new URL('./icon-home-v11-192.png', SCOPE_URL).href,
-  new URL('./icon-home-v11-512.png', SCOPE_URL).href
+  new URL('./icon-home-v12.svg', SCOPE_URL).href,
+  new URL('./icon-home-v12-180.png', SCOPE_URL).href,
+  new URL('./icon-home-v12-192.png', SCOPE_URL).href,
+  new URL('./icon-home-v12-512.png', SCOPE_URL).href
 ];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).catch(() => caches.open(CACHE_NAME)));
