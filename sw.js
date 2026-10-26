@@ -1,40 +1,59 @@
-const CACHE_NAME = 'masse-clean-v12-swap-viewport';
+/* Masse Clean PWA — v16
+   Navigation is network-first so GitHub Pages updates don't stay hidden behind an older cached index.html.
+   Other same-scope assets remain cache-first for offline resilience. */
+const CACHE_NAME = 'masse-clean-shell-v16';
 const SCOPE_URL = self.registration.scope;
-const APP_URL = new URL('./index.html', SCOPE_URL).href;
-const ROOT_URL = new URL('./', SCOPE_URL).href;
-const ASSETS = [
-  ROOT_URL, APP_URL,
-  new URL('./manifest-v12.webmanifest', SCOPE_URL).href,
-  new URL('./manifest.webmanifest', SCOPE_URL).href,
-  new URL('./icon-home-v12.svg', SCOPE_URL).href,
-  new URL('./icon-home-v12-180.png', SCOPE_URL).href,
-  new URL('./icon-home-v12-192.png', SCOPE_URL).href,
-  new URL('./icon-home-v12-512.png', SCOPE_URL).href
-];
+
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(ASSETS)).catch(() => caches.open(CACHE_NAME)));
-  self.skipWaiting();
+  event.waitUntil(self.skipWaiting());
 });
+
 self.addEventListener('activate', event => {
   event.waitUntil((async () => {
-    const keys = await caches.keys();
-    await Promise.all(keys.filter(key => key.startsWith('masse-clean-') && key !== CACHE_NAME).map(key => caches.delete(key)));
+    const names = await caches.keys();
+    await Promise.all(names.filter(name => name.startsWith('masse-clean-shell-') && name !== CACHE_NAME)
+      .map(name => caches.delete(name)));
     await self.clients.claim();
   })());
 });
+
 self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET') return;
-  const url = new URL(event.request.url);
-  if (url.origin !== self.location.origin) return;
-  if (event.request.mode === 'navigate') {
-    event.respondWith(fetch(event.request).then(response => {
-      if (response && response.ok) caches.open(CACHE_NAME).then(cache => cache.put(APP_URL, response.clone()));
-      return response;
-    }).catch(async () => (await caches.match(APP_URL)) || (await caches.match(ROOT_URL))));
+  const request = event.request;
+  if (request.method !== 'GET') return;
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin || !url.href.startsWith(SCOPE_URL)) return;
+  if (url.pathname.endsWith('/sw.js')) return;
+
+  if (request.mode === 'navigate' || request.destination === 'document') {
+    event.respondWith((async () => {
+      const cache = await caches.open(CACHE_NAME);
+      try {
+        const response = await fetch(request, { cache: 'no-store' });
+        if (response && response.ok) await cache.put(request, response.clone());
+        return response;
+      } catch (error) {
+        const exact = await cache.match(request);
+        if (exact) return exact;
+        const indexResponse = await cache.match(new URL('index.html', SCOPE_URL).href);
+        if (indexResponse) return indexResponse;
+        return new Response('האפליקציה אינה זמינה כרגע ללא חיבור. התחבר לאינטרנט ופתח מחדש.', {
+          status: 503, headers: { 'Content-Type': 'text/plain; charset=utf-8' }
+        });
+      }
+    })());
     return;
   }
-  event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request).then(response => {
-    if (response && response.ok) caches.open(CACHE_NAME).then(cache => cache.put(event.request, response.clone()));
-    return response;
-  }).catch(() => caches.match(event.request))));
+
+  event.respondWith((async () => {
+    const cache = await caches.open(CACHE_NAME);
+    const cached = await cache.match(request);
+    if (cached) return cached;
+    try {
+      const response = await fetch(request);
+      if (response && response.ok) await cache.put(request, response.clone());
+      return response;
+    } catch (error) {
+      return new Response('', { status: 504, statusText: 'Offline' });
+    }
+  })());
 });
